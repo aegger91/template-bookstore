@@ -49,13 +49,14 @@ export function LanguageSwitcher({ tone = "light", variant = "menu" }: { tone?: 
     <DropdownMenu>
       <DropdownMenuTrigger
         className={cn(
-          "flex items-center gap-1.5 rounded px-1.5 py-0.5 outline-none",
+          // Min width covers the longest native label (Ελληνικά) so the bar does not jump on language switch.
+          "flex min-w-[7.5rem] items-center gap-1.5 rounded px-1.5 py-0.5 outline-none",
           tone === "dark" ? "text-paper/85 hover:text-gold-soft" : "text-ink hover:text-oxblood",
         )}
         aria-label={dict.common.language}
       >
-        <Globe className="size-3.5" />
-        {current?.nativeLabel}
+        <Globe className="size-3.5 shrink-0" />
+        <span className="whitespace-nowrap">{current?.nativeLabel}</span>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="min-w-36 bg-paper">
         {site.languages.map((l) => (

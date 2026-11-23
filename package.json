@@ -11,6 +11,7 @@
     "lint": "eslint",
     "typecheck": "next typegen && tsc --noEmit",
     "check": "node scripts/check-layout.mjs",
+    "check:fit": "node scripts/check-language-fit.mjs",
     "screenshots": "node scripts/screenshots.mjs"
   },
   "dependencies": {

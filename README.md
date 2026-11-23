@@ -49,6 +49,7 @@ The template ships only layout and short neutral placeholder text. It has no exp
 
 ```bash
 npm run check        # every page, every language, at 360/390/768/1280/1440 px, plus right-to-left
+npm run check:fit    # LANGUAGE FIT: every page × language at 360/768/1280; flags text overflow and overlap
 npm run screenshots  # desktop and mobile screenshots into screenshots/
 ```
 

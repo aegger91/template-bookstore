@@ -29,7 +29,7 @@ export function WholesaleTiers({ lang }: SectionProps) {
               <span className="absolute inset-2 rounded-sm border border-gold-foil/35" />
               <p className="relative font-display text-3xl text-gold-foil">{i + 1}</p>
               <p className="relative mt-3 text-[1.02rem] leading-snug">{t}</p>
-              <p className="foil-text relative mt-3 font-heading text-xl">{d}</p>
+              <p className="foil-text relative mt-3 max-w-full font-heading text-[1.15rem] leading-[1.3] break-words md:text-xl">{d}</p>
             </li>
           ))}
         </ol>

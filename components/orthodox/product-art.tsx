@@ -60,7 +60,7 @@ function SampleTag({ light }: { light?: boolean }) {
   return (
     <span
       className={cn(
-        "absolute inset-x-0 bottom-[3.5%] text-center font-sans text-[3.4cqw] tracking-[0.3em] uppercase",
+        "absolute inset-x-0 bottom-[3.5%] text-center font-sans text-[3.4cqw] tracking-[0.18em] uppercase",
         light ? "text-ink/45" : "text-gold-soft/55",
       )}
     >
@@ -83,10 +83,11 @@ function BookCover({ product, lang, view }: { product: Product; lang: string; vi
         <div className="cloth relative flex h-[92%] w-[22%] flex-col items-center justify-between rounded-[2px] py-[6%] shadow-book" style={clothStyle(cloth)}>
           <span className="block h-px w-[70%] bg-gold-foil/70" />
           <span
-            className={cn("font-heading text-[7cqw] leading-none whitespace-nowrap", ink)}
+            className={cn("max-h-full overflow-hidden font-heading text-[5.5cqw] leading-none", ink)}
             style={{ writingMode: "vertical-rl" }}
+            data-overflow-ok
           >
-            {title.length > 34 ? `${title.slice(0, 32)}…` : title}
+            {title.length > 28 ? `${title.slice(0, 26)}…` : title}
           </span>
           <Emblem name={emblem} className={cn("h-[7cqw]", emblemColor)} />
           <span className="block h-px w-[70%] bg-gold-foil/70" />
@@ -100,6 +101,7 @@ function BookCover({ product, lang, view }: { product: Product; lang: string; vi
       <div
         className="cloth @container relative aspect-[2/3] h-auto max-h-full w-full max-w-full overflow-hidden rounded-[2px_5px_5px_2px] shadow-book"
         style={clothStyle(cloth)}
+        data-overflow-ok
       >
         <div className="absolute inset-y-0 start-0 w-[6%] bg-gradient-to-r from-black/25 to-transparent" />
         <div className="absolute inset-y-0 start-[6%] w-px bg-white/10" />
@@ -152,10 +154,10 @@ function BookCover({ product, lang, view }: { product: Product; lang: string; vi
             <div className="absolute inset-[13%] flex flex-col items-center text-center">
               <h3
                 className={cn(
-                  "font-heading leading-[1.12] font-medium",
+                  "line-clamp-4 max-w-full font-heading leading-[1.22] font-medium break-words hyphens-auto",
                   ink,
-                  title.length > 38 ? "text-[7cqw]" : title.length > 22 ? "text-[8.4cqw]" : "text-[10cqw]",
-                  design === "picture" && "text-[7.5cqw]",
+                  title.length > 38 ? "text-[6.2cqw]" : title.length > 22 ? "text-[7.6cqw]" : "text-[9.2cqw]",
+                  design === "picture" && "text-[7cqw]",
                 )}
               >
                 {title}
@@ -170,7 +172,7 @@ function BookCover({ product, lang, view }: { product: Product; lang: string; vi
                 )}
               </div>
               {author ? (
-                <p className={cn("font-sans text-[4.6cqw] tracking-[0.12em] uppercase", light ? "text-ink/70" : "text-gold-soft/85")}>
+                <p className={cn("line-clamp-2 max-w-full font-sans text-[4.2cqw] tracking-[0.08em] uppercase", light ? "text-ink/70" : "text-gold-soft/85")}>
                   {author.length > 40 ? author.split(" (")[0] : author}
                 </p>
               ) : null}
@@ -367,8 +369,8 @@ function Goods({ kind, lang, product }: { kind: Product["art"]["kind"]; lang: st
           <div className="relative flex h-full flex-col justify-between">
             <OrthodoxCross variant="slavic" className="h-[24cqw] text-gold-foil" />
             <div>
-              <p className="foil-text font-heading text-[8cqw] leading-tight">{tr(product.title, lang).split("(")[0]}</p>
-              <p className="font-sans text-[4cqw] tracking-[0.25em] text-gold-soft/70 uppercase">Sample</p>
+              <p className="foil-text line-clamp-3 max-w-full font-heading text-[7cqw] leading-[1.25] break-words">{tr(product.title, lang).split("(")[0]}</p>
+              <p className="font-sans text-[4cqw] tracking-[0.16em] text-gold-soft/70 uppercase">Sample</p>
             </div>
           </div>
         </div>
@@ -393,23 +395,23 @@ export function ProductArt({
   const photo = product.photos?.[view];
   if (photo) {
     return (
-      <div className={cn("relative grid size-full place-items-center", className)}>
+      <div className={cn("relative grid size-full place-items-center", className)} data-overflow-ok>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={photo} alt={tr(product.title, lang)} loading="lazy" className="max-h-full max-w-full object-contain shadow-book" />
       </div>
     );
   }
   return (
-    <div className={cn("relative grid size-full place-items-center", className)}>
+    <div className={cn("relative grid size-full place-items-center", className)} data-overflow-ok>
       {kind === "book" && <BookCover product={product} lang={lang} view={view} />}
       {kind === "audio" && (
         <div className="@container relative aspect-square w-[92%]">
           <div className="absolute end-0 top-[6%] aspect-square w-[86%] rounded-full bg-[radial-gradient(circle,#ddd_0_8%,#222_8.5%_14%,#3a3a3a_14.5%_48%,#1a1a1a_49%)] shadow-book" />
-          <div className="cloth absolute start-0 top-0 aspect-square w-[86%] shadow-book" style={clothStyle(product.art.cloth)}>
+          <div className="cloth absolute start-0 top-0 aspect-square w-[86%] overflow-hidden shadow-book" style={clothStyle(product.art.cloth)} data-overflow-ok>
             <div className="absolute inset-[7%] flex flex-col items-center justify-between border border-gold-foil/70 p-[8%] text-center">
               <Emblem name={product.art.emblem} className="h-[16cqw] text-gold-foil" />
-              <p className="foil-text font-heading text-[6.4cqw] leading-tight">{tr(product.title, lang).split("(")[0]}</p>
-              <p className="font-sans text-[3.6cqw] tracking-[0.25em] text-gold-soft/60 uppercase">Sample</p>
+              <p className="foil-text line-clamp-3 max-w-full font-heading text-[5.8cqw] leading-[1.25] break-words">{tr(product.title, lang).split("(")[0]}</p>
+              <p className="font-sans text-[3.6cqw] tracking-[0.18em] text-gold-soft/60 uppercase">Sample</p>
             </div>
           </div>
         </div>

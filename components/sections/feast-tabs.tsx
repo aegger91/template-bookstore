@@ -60,7 +60,7 @@ export function FeastTabs({ seasons, initial, nowLabel, shopLabel }: { seasons: 
         <div className="cloth relative flex flex-col overflow-hidden rounded-md p-7 text-paper shadow-book md:p-8" style={clothStyle(s.cloth)}>
           <span className="absolute inset-3 rounded-sm border border-gold-foil/40" />
           <OrthodoxCross variant="byzantine" className="relative h-9 text-gold-foil" />
-          <h3 className="foil-text relative mt-6 font-heading text-[2rem] leading-tight">{s.title}</h3>
+          <h3 className="foil-text relative mt-6 font-heading text-[1.85rem] leading-[1.28] md:text-[2rem]">{s.title}</h3>
           <p className="relative mt-1 text-[0.95rem] text-gold-soft/85">{s.dates}</p>
           <p className="relative mt-4 text-[1.05rem] leading-relaxed text-paper/85">{s.intro}</p>
           <Link href={s.href} className="relative mt-6 inline-flex items-center gap-2 self-start rounded-md bg-gold-foil px-4 py-2 text-navy-deep hover:bg-gold-soft lg:mt-auto">

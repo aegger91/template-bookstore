@@ -36,6 +36,7 @@ export function ProductGallery({ product, views, labels }: { product: Product; v
                 "relative aspect-square overflow-hidden rounded-md border-2 bg-parchment/60 p-3 transition-colors",
                 view === v ? "border-oxblood" : "border-transparent hover:border-rule",
               )}
+              data-overflow-ok
             >
               <ProductArt product={product} lang={lang} view={v} />
               <span className="sr-only">{labels[v]}</span>
@@ -126,7 +127,7 @@ export function PurchasePanel({ product }: { product: Product }) {
                 )}
               >
                 <input type="radio" name="format" value={f.id} checked={f.id === formatId} onChange={() => setFormatId(f.id)} className="sr-only" />
-                <span className="text-[1rem] leading-tight text-ink">{optionLabel(f)}</span>
+                <span className="text-[1rem] leading-snug break-words text-ink">{optionLabel(f)}</span>
                 {f.format !== "gift-card" && <span className="mt-0.5 font-sans text-[0.85rem] text-ink-soft">{money(f.price, lang)}</span>}
               </label>
             ))}

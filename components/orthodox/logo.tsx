@@ -28,13 +28,14 @@ export function Logo({ lang, condensed, style = site.logo.style, className, tone
   const Words = (
     <span
       className={cn(
-        "flex min-w-0 flex-col font-heading tracking-[0.01em] transition-all duration-300",
-        condensed ? "text-[1.05rem] md:text-[1.15rem]" : "text-[1.1rem] md:text-[1.4rem] lg:text-[1.1rem] xl:text-[1.4rem]",
+        "flex min-w-0 flex-col font-heading tracking-[0.01em]",
+        // Fixed sizes (no size animation) so glyphs do not appear to shrink away on scroll / language switch.
+        condensed ? "text-[1.05rem] md:text-[1.15rem]" : "text-[1.1rem] md:text-[1.25rem] lg:text-[1.1rem] xl:text-[1.3rem]",
         text,
       )}
     >
-      <span className="hidden max-w-[24rem] leading-[1.08] text-balance xl:block">{name}</span>
-      <span className="line-clamp-2 leading-[1.08] text-balance xl:hidden">{short}</span>
+      <span className="hidden max-w-[22rem] leading-[1.22] text-balance xl:block">{name}</span>
+      <span className="line-clamp-2 leading-[1.22] text-balance xl:hidden">{short}</span>
     </span>
   );
 
@@ -101,7 +102,7 @@ export function Logo({ lang, condensed, style = site.logo.style, className, tone
 
   return (
     <span className={cn("flex min-w-0 items-center gap-2.5", className)}>
-      <Mark mark={mark} className={cn("text-oxblood transition-all", condensed ? "h-7" : "h-8 md:h-10", tone === "paper" && "text-gold-foil")} />
+      <Mark mark={mark} className={cn("shrink-0 text-oxblood", condensed ? "h-7" : "h-8 md:h-9", tone === "paper" && "text-gold-foil")} />
       {Words}
     </span>
   );

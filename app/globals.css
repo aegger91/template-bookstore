@@ -99,13 +99,17 @@
     font-family: var(--tk-font-heading);
     font-weight: 500;
     letter-spacing: -0.005em;
-    line-height: 1.15;
+    line-height: 1.25;
     text-wrap: balance;
     overflow-wrap: break-word;
   }
   p { text-wrap: pretty; }
   button:not(:disabled), [role="button"]:not(:disabled) {
     cursor: pointer;
+  }
+  /* Keep control labels from clipping descenders / growing glyphs across languages */
+  button, a, [role="button"], [role="tab"] {
+    overflow-wrap: break-word;
   }
   :focus-visible {
     outline: 2px solid var(--tk-color-gold);
@@ -126,12 +130,15 @@
   .eyebrow {
     font-family: var(--tk-font-ui);
     font-size: 0.78rem;
-    letter-spacing: 0.16em;
+    letter-spacing: 0.14em;
     text-transform: uppercase;
     color: var(--tk-color-gold);
     font-weight: 600;
+    line-height: 1.35;
+    overflow: visible;
   }
-  :lang(el) .eyebrow { letter-spacing: 0.08em; }
+  :lang(ru) .eyebrow { letter-spacing: 0.1em; }
+  :lang(el) .eyebrow { letter-spacing: 0.06em; }
   .rule-ornament {
     display: flex;
     align-items: center;
@@ -150,6 +157,13 @@
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    /* Extra lead + paint so clipped gradients do not eat descenders */
+    line-height: 1.28;
+    padding-block: 0.08em;
+    padding-inline: 0.02em;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    overflow: visible;
   }
   .cloth {
     background-image:

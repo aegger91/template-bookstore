@@ -176,21 +176,23 @@ export function Header() {
         ref={headerRef}
         data-condensed={condensed}
         className={cn(
-          "fixed inset-x-0 top-0 z-40 transition-[background-color,box-shadow] duration-300",
-          condensed ? "bg-paper/95 shadow-[0_1px_0_var(--tk-color-rule),0_8px_24px_-18px_rgba(43,35,32,.5)] backdrop-blur" : "bg-cream",
+          // Color/shadow only — no height animation, which caused flicker on scroll.
+          "fixed inset-x-0 top-0 z-40 bg-cream",
+          condensed && "bg-paper/95 shadow-[0_1px_0_var(--tk-color-rule),0_8px_24px_-18px_rgba(43,35,32,.5)] backdrop-blur",
         )}
       >
         <div
           className={cn(
-            "hidden overflow-hidden border-b border-rule/70 bg-navy text-paper/85 transition-[max-height,opacity] duration-300 md:block",
-            condensed ? "max-h-0 opacity-0" : "max-h-10 opacity-100",
+            "hidden border-b border-rule/70 bg-navy text-paper/85 md:block",
+            condensed && "hidden!",
           )}
+          aria-hidden={condensed || undefined}
         >
           <div className="container-page flex h-9 items-center justify-between gap-6 font-sans text-[0.82rem]">
             <p className="truncate">{tr(site.brand.sampleNotice, lang)}</p>
-            <nav className="flex shrink-0 items-center gap-5" aria-label="Utility">
+            <nav className="flex shrink-0 items-center gap-4 xl:gap-5" aria-label="Utility">
               {navigation.utility.map((n) => (
-                <Link key={n.id} href={href(lang, n.href)} className="hover:text-gold-soft">
+                <Link key={n.id} href={href(lang, n.href)} className="whitespace-nowrap hover:text-gold-soft">
                   {tr(n.label, lang)}
                 </Link>
               ))}
@@ -200,12 +202,7 @@ export function Header() {
         </div>
 
         <div className="container-page">
-          <div
-            className={cn(
-              "flex items-center gap-3 transition-[height] duration-300 lg:gap-4 xl:gap-8",
-              condensed ? "h-14 md:h-16" : "h-16 md:h-[4.5rem]",
-            )}
-          >
+          <div className="flex h-16 items-center gap-2 md:h-[4.25rem] lg:gap-3 xl:gap-6">
             <Sheet open={drawerOpen} onOpenChange={setDrawerOpen}>
               <SheetTrigger asChild>
                 <button
@@ -283,13 +280,13 @@ export function Header() {
               <Logo lang={lang} condensed={condensed} />
             </Link>
 
-            <nav className="ms-auto hidden shrink-0 items-center lg:flex xl:gap-1" aria-label="Main" data-header-part>
+            <nav className="ms-auto hidden min-w-0 shrink items-center lg:flex" aria-label="Main" data-header-part>
               {navigation.header.map((n) =>
                 n.kind === "mega" ? (
                   <div key={n.id} onMouseEnter={openMega} onMouseLeave={scheduleClose}>
                     <button
                       className={cn(
-                        "flex items-center gap-1 rounded-md px-1.5 py-2 text-[0.98rem] whitespace-nowrap text-ink transition-colors hover:text-oxblood xl:px-3 xl:text-[1.02rem]",
+                        "flex items-center gap-1 rounded-md px-1.5 py-2 text-[0.92rem] whitespace-nowrap text-ink transition-colors hover:text-oxblood xl:px-2.5 xl:text-[1rem]",
                         (megaOpen || isActive(n.href)) && "text-oxblood",
                       )}
                       aria-expanded={megaOpen}
@@ -297,7 +294,7 @@ export function Header() {
                       onClick={toggleMega}
                     >
                       {tr(n.label, lang)}
-                      <ChevronDown className={cn("size-4 transition-transform", megaOpen && "rotate-180")} />
+                      <ChevronDown className={cn("size-4 shrink-0 transition-transform", megaOpen && "rotate-180")} />
                     </button>
                   </div>
                 ) : (
@@ -305,7 +302,7 @@ export function Header() {
                     key={n.id}
                     href={href(lang, n.href)}
                     className={cn(
-                      "rounded-md px-1.5 py-2 text-[0.98rem] whitespace-nowrap text-ink transition-colors hover:text-oxblood xl:px-3 xl:text-[1.02rem]",
+                      "rounded-md px-1.5 py-2 text-[0.92rem] whitespace-nowrap text-ink transition-colors hover:text-oxblood xl:px-2.5 xl:text-[1rem]",
                       isActive(n.href) && "text-oxblood",
                     )}
                   >
@@ -346,7 +343,8 @@ export function Header() {
         </div>
         {!condensed && <div className="h-px bg-rule" />}
       </header>
-      <div aria-hidden className="h-[4.0625rem] md:h-[6.875rem]" />
+      {/* Spacer matches expanded header; condensed mode paints over it without reflow. */}
+      <div aria-hidden className="h-16 md:h-[6.5625rem]" />
       <SearchDialog open={searchOpen} onOpenChange={setSearchOpen} />
     </>
   );

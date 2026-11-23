@@ -29,7 +29,7 @@ export function Hero({ section, lang }: SectionProps) {
       <div className="container-page grid items-center gap-10 pt-10 pb-12 md:pt-16 lg:grid-cols-[1.05fr_1fr] lg:gap-16 lg:pb-20">
         <div>
           {section.eyebrow && <p className="eyebrow mb-4">{tr(section.eyebrow, lang)}</p>}
-          <h1 className="text-[2.35rem] leading-[1.08] text-ink sm:text-[2.9rem] lg:text-[3.6rem]">{tr(section.heading, lang)}</h1>
+          <h1 className="text-[2.2rem] leading-[1.22] text-ink sm:text-[2.75rem] lg:text-[3.35rem]">{tr(section.heading, lang)}</h1>
           <p className="mt-5 max-w-xl text-lg text-ink-soft md:text-xl">{tr(section.text, lang)}</p>
           <div className="mt-8 flex flex-wrap gap-3">
             {primary && (
@@ -155,7 +155,7 @@ export function CategoryGrid({ section, lang }: SectionProps) {
                   >
                     <span className="absolute inset-2 rounded-[2px] border border-gold-foil/35" />
                     <Pictogram name={c.pictogram} className="relative h-8 w-8 text-gold-foil md:h-10 md:w-10" />
-                    <span className="foil-text relative font-heading text-[1.06rem] leading-tight sm:text-[1.2rem]">{tr(c.title, lang)}</span>
+                    <span className="foil-text relative font-heading text-[1.06rem] leading-[1.28] sm:text-[1.2rem]">{tr(c.title, lang)}</span>
                   </Link>
                 </li>
               ))}
