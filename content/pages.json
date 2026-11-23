@@ -1,0 +1,262 @@
+{
+  "$schema": "../schemas/pages.schema.json",
+  "pages": [
+    {
+      "path": "",
+      "title": { "en": "Home", "ru": "Главная", "el": "Αρχική" },
+      "description": { "en": "An Orthodox bookstore with books, icons, prayer ropes and gifts. Sample template.", "ru": "Православная книжная лавка: книги, иконы, чётки и подарки. Образец шаблона.", "el": "Ορθόδοξο βιβλιοπωλείο με βιβλία, εικόνες, κομποσχοίνια και δώρα. Ενδεικτικό πρότυπο." },
+      "sections": [
+        {
+          "type": "hero", "enabled": true,
+          "eyebrow": { "en": "New this month", "ru": "Новое в этом месяце", "el": "Νέα αυτόν τον μήνα" },
+          "heading": { "en": "A quiet reading room for the life of the Church", "ru": "Тихая читальня для церковной жизни", "el": "Ένα ήσυχο αναγνωστήριο για τη ζωή της Εκκλησίας" },
+          "text": { "en": "Books from the Fathers to the Sunday school shelf, with icons, prayer ropes and candles for the home. Ask us anything; we read what we sell.", "ru": "Книги от святых отцов до полки воскресной школы, иконы, чётки и свечи для дома. Спрашивайте, мы читаем то, что продаём.", "el": "Βιβλία από τους Πατέρες έως το ράφι του κατηχητικού, με εικόνες, κομποσχοίνια και κεριά για το σπίτι. Ρωτήστε μας· διαβάζουμε ό,τι πουλάμε." },
+          "epigraph": { "en": "Glory to God for all things.", "ru": "Слава Богу за всё.", "el": "Δόξα τῷ Θεῷ πάντων ἕνεκεν." },
+          "epigraphSource": { "en": "St. John Chrysostom", "ru": "свт. Иоанн Златоуст", "el": "Ἅγιος Ἰωάννης ὁ Χρυσόστομος" },
+          "primaryLink": { "href": "catalog", "label": { "en": "Browse the shelves", "ru": "Смотреть каталог", "el": "Δείτε τα ράφια" } },
+          "secondaryLink": { "href": "visit", "label": { "en": "Visit the store", "ru": "Прийти в лавку", "el": "Επισκεφθείτε μας" } },
+          "showNewReleases": true,
+          "showStaffPicks": true
+        },
+        {
+          "type": "feastCollection", "enabled": true,
+          "eyebrow": { "en": "For the season", "ru": "К времени года", "el": "Για την περίοδο" },
+          "heading": { "en": "Reading for the season of the Church", "ru": "Чтение по церковному году", "el": "Ανάγνωση για την εκκλησιαστική περίοδο" }
+        },
+        {
+          "type": "categoryGrid", "enabled": true,
+          "eyebrow": { "en": "Shop by category", "ru": "По разделам", "el": "Ανά κατηγορία" },
+          "heading": { "en": "Every shelf in the store", "ru": "Все полки лавки", "el": "Όλα τα ράφια του καταστήματος" }
+        },
+        {
+          "type": "saintShelf", "enabled": true,
+          "eyebrow": { "en": "Shop by saint", "ru": "По святым", "el": "Ανά άγιο" },
+          "heading": { "en": "Books and icons for the saints you love", "ru": "Книги и иконы любимых святых", "el": "Βιβλία και εικόνες για τους αγίους που αγαπάτε" }
+        },
+        {
+          "type": "blessingNote", "enabled": true,
+          "eyebrow": { "en": "A note from the bookstore", "ru": "Слово от лавки", "el": "Ένα σημείωμα από το βιβλιοπωλείο" },
+          "heading": { "en": "Why a parish needs a bookstore", "ru": "Зачем приходу книжная лавка", "el": "Γιατί μια ενορία χρειάζεται βιβλιοπωλείο" },
+          "text": {
+            "en": "We started as a table at the back of the church after Liturgy. People asked what to read, what to give a godchild, how to set up an icon corner. The table became a room, and the room became this store.\n\nWe stock what we would give our own families. If we do not have something, we will order it for you.",
+            "ru": "Мы начинали со столика в притворе после литургии. Люди спрашивали, что почитать, что подарить крестнику, как устроить красный угол. Столик стал комнатой, а комната этой лавкой.\n\nМы продаём то, что подарили бы своим близким. Если чего-то нет, закажем для вас.",
+            "el": "Ξεκινήσαμε ως ένα τραπέζι στο πίσω μέρος του ναού μετά τη Λειτουργία. Ο κόσμος ρωτούσε τι να διαβάσει, τι να χαρίσει σε ένα βαφτιστήρι, πώς να στήσει εικονοστάσι. Το τραπέζι έγινε δωμάτιο και το δωμάτιο έγινε αυτό το κατάστημα.\n\nΈχουμε ό,τι θα χαρίζαμε στις δικές μας οικογένειες. Αν κάτι λείπει, θα το παραγγείλουμε για εσάς."
+          },
+          "blessing": { "en": "With the blessing of [name of the hierarch, abbot or rector]", "ru": "По благословению [имя архиерея, игумена или настоятеля]", "el": "Με την ευλογία του [όνομα επισκόπου, ηγουμένου ή προϊσταμένου]" },
+          "signature": { "en": "The bookstore staff (sample)", "ru": "Сотрудники лавки (образец)", "el": "Το προσωπικό του βιβλιοπωλείου (δείγμα)" },
+          "link": { "href": "about", "label": { "en": "Read our story", "ru": "Наша история", "el": "Η ιστορία μας" } }
+        },
+        {
+          "type": "eventsPreview", "enabled": true,
+          "eyebrow": { "en": "Events", "ru": "События", "el": "Εκδηλώσεις" },
+          "heading": { "en": "Signings, talks and story hours", "ru": "Встречи с авторами, беседы и детские часы", "el": "Υπογραφές, ομιλίες και ώρες παραμυθιού" },
+          "limit": 3
+        },
+        {
+          "type": "journalPreview", "enabled": true,
+          "eyebrow": { "en": "Journal and reviews", "ru": "Журнал и отзывы", "el": "Ημερολόγιο και κριτικές" },
+          "heading": { "en": "From the reading room", "ru": "Из читальни", "el": "Από το αναγνωστήριο" },
+          "limit": 3
+        },
+        { "type": "visitStrip", "enabled": true }
+      ]
+    },
+    {
+      "path": "catalog",
+      "title": { "en": "Catalog", "ru": "Каталог", "el": "Κατάλογος" },
+      "sections": [ { "type": "catalogBrowser", "enabled": true } ]
+    },
+    {
+      "path": "cart",
+      "title": { "en": "Your cart", "ru": "Корзина", "el": "Καλάθι" },
+      "sections": [ { "type": "cart", "enabled": true } ]
+    },
+    {
+      "path": "checkout",
+      "title": { "en": "Checkout", "ru": "Оформление заказа", "el": "Ολοκλήρωση παραγγελίας" },
+      "sections": [ { "type": "checkout", "enabled": true } ]
+    },
+    {
+      "path": "account",
+      "title": { "en": "Your account", "ru": "Личный кабинет", "el": "Ο λογαριασμός σας" },
+      "sections": [
+        { "type": "pageHeader", "enabled": true, "heading": { "en": "Your account", "ru": "Личный кабинет", "el": "Ο λογαριασμός σας" } },
+        { "type": "account", "enabled": true }
+      ]
+    },
+    {
+      "path": "wishlist",
+      "title": { "en": "Wishlist", "ru": "Избранное", "el": "Λίστα επιθυμιών" },
+      "sections": [
+        { "type": "pageHeader", "enabled": true, "heading": { "en": "Your wishlist", "ru": "Избранное", "el": "Η λίστα επιθυμιών σας" }, "intro": { "en": "Saved on this device. Signing in will keep it across devices once accounts are connected.", "ru": "Сохраняется на этом устройстве. После подключения кабинетов будет доступно на всех устройствах.", "el": "Αποθηκεύεται σε αυτή τη συσκευή. Μετά τη σύνδεση λογαριασμών θα είναι διαθέσιμη παντού." } },
+        { "type": "wishlist", "enabled": true }
+      ]
+    },
+    {
+      "path": "wholesale",
+      "title": { "en": "Parish and wholesale orders", "ru": "Заказы для приходов и оптом", "el": "Παραγγελίες ενοριών και χονδρικής" },
+      "sections": [
+        {
+          "type": "pageHeader", "enabled": true,
+          "eyebrow": { "en": "For parish bookstores", "ru": "Для приходских лавок", "el": "Για ενοριακά βιβλιοπωλεία" },
+          "heading": { "en": "Parish and wholesale orders", "ru": "Заказы для приходов и оптом", "el": "Παραγγελίες ενοριών και χονδρικής" },
+          "intro": { "en": "Parish bookstores, monasteries, church schools and camps can order in bulk. Tell us what you need and we will reply with a quote.", "ru": "Приходские лавки, монастыри, воскресные школы и лагеря могут заказывать оптом. Напишите, что нужно, и мы пришлём расчёт.", "el": "Ενοριακά βιβλιοπωλεία, μονές, κατηχητικά και κατασκηνώσεις μπορούν να παραγγείλουν χονδρικά. Πείτε μας τι χρειάζεστε και θα σας στείλουμε προσφορά." }
+        },
+        { "type": "wholesaleTiers", "enabled": true },
+        { "type": "wholesaleForm", "enabled": true }
+      ]
+    },
+    {
+      "path": "publishers",
+      "title": { "en": "Publishers and authors", "ru": "Издатели и авторы", "el": "Εκδότες και συγγραφείς" },
+      "sections": [
+        {
+          "type": "pageHeader", "enabled": true,
+          "eyebrow": { "en": "Who we carry", "ru": "Кого мы представляем", "el": "Τι διαθέτουμε" },
+          "heading": { "en": "Publishers and authors", "ru": "Издатели и авторы", "el": "Εκδότες και συγγραφείς" },
+          "intro": { "en": "Small presses, monastery imprints and the Fathers of the Church. All publishers and modern authors shown here are samples.", "ru": "Малые издательства, монастырские типографии и святые отцы. Все издатели и современные авторы здесь условные.", "el": "Μικροί εκδοτικοί οίκοι, μοναστηριακές εκδόσεις και οι Πατέρες της Εκκλησίας. Όλοι οι εκδότες και οι σύγχρονοι συγγραφείς εδώ είναι ενδεικτικοί." }
+        },
+        { "type": "publishersList", "enabled": true, "heading": { "en": "Publishers", "ru": "Издатели", "el": "Εκδότες" } },
+        {
+          "type": "authorsList", "enabled": true,
+          "fathersHeading": { "en": "Fathers and classic authors", "ru": "Святые отцы и классики", "el": "Πατέρες και κλασικοί συγγραφείς" },
+          "modernHeading": { "en": "Modern authors (samples)", "ru": "Современные авторы (условные)", "el": "Σύγχρονοι συγγραφείς (ενδεικτικοί)" }
+        }
+      ]
+    },
+    {
+      "path": "events",
+      "title": { "en": "Events", "ru": "События", "el": "Εκδηλώσεις" },
+      "sections": [
+        {
+          "type": "pageHeader", "enabled": true,
+          "eyebrow": { "en": "At the bookstore", "ru": "В лавке", "el": "Στο βιβλιοπωλείο" },
+          "heading": { "en": "Signings, talks and reading groups", "ru": "Встречи, беседы и кружки чтения", "el": "Υπογραφές, ομιλίες και ομάδες ανάγνωσης" },
+          "intro": { "en": "Everyone is welcome. RSVP through OrthodoxConnect so we can set out enough chairs and tea.", "ru": "Приходите все. Отметьтесь через OrthodoxConnect, чтобы мы приготовили достаточно стульев и чая.", "el": "Όλοι είναι ευπρόσδεκτοι. Δηλώστε συμμετοχή μέσω OrthodoxConnect για να ετοιμάσουμε αρκετές καρέκλες και τσάι." }
+        },
+        { "type": "eventsList", "enabled": true }
+      ]
+    },
+    {
+      "path": "journal",
+      "title": { "en": "Journal and reviews", "ru": "Журнал и отзывы", "el": "Ημερολόγιο και κριτικές" },
+      "sections": [
+        {
+          "type": "pageHeader", "enabled": true,
+          "eyebrow": { "en": "Journal", "ru": "Журнал", "el": "Ημερολόγιο" },
+          "heading": { "en": "Reading lists, reviews and notes", "ru": "Списки чтения, отзывы и заметки", "el": "Λίστες ανάγνωσης, κριτικές και σημειώσεις" }
+        },
+        { "type": "journalList", "enabled": true }
+      ]
+    },
+    {
+      "path": "about",
+      "title": { "en": "About", "ru": "О нас", "el": "Σχετικά" },
+      "sections": [
+        {
+          "type": "pageHeader", "enabled": true,
+          "eyebrow": { "en": "About the store", "ru": "О лавке", "el": "Για το βιβλιοπωλείο" },
+          "heading": { "en": "A bookstore that grew out of a parish", "ru": "Лавка, выросшая из прихода", "el": "Ένα βιβλιοπωλείο που γεννήθηκε από μια ενορία" }
+        },
+        {
+          "type": "richText", "enabled": true,
+          "body": {
+            "en": "St. Example Orthodox Bookstore is a sample store used to show this template. Replace this text with your own story: who started the store, which parish or monastery it serves, and who works the counter.\n\nTell visitors what you stock and why. Many Orthodox bookstores carry service books for the kliros, lives of saints for families, icons blessed at the parish and prayer ropes tied by monastics. Say which jurisdictions and languages you serve.\n\nKeep it plain and warm. People come to an Orthodox bookstore to be helped, not sold to.",
+            "ru": "Православная книжная лавка св. Примера: условный магазин для показа шаблона. Замените этот текст своей историей: кто открыл лавку, какому приходу или монастырю она служит, кто стоит за прилавком.\n\nРасскажите, что вы продаёте и почему. Многие православные лавки держат богослужебные книги для клироса, жития для семей, иконы, освящённые в храме, и чётки, сплетённые монахами. Укажите, каким юрисдикциям и на каких языках вы служите.\n\nПишите просто и тепло. В православную лавку приходят за помощью, а не за покупкой.",
+            "el": "Το Ορθόδοξο Βιβλιοπωλείο Αγίου Παραδείγματος είναι ενδεικτικό κατάστημα για την παρουσίαση του προτύπου. Αντικαταστήστε το κείμενο με τη δική σας ιστορία: ποιος ξεκίνησε το κατάστημα, ποια ενορία ή μονή εξυπηρετεί, ποιος βρίσκεται στον πάγκο.\n\nΠείτε τι διαθέτετε και γιατί. Πολλά ορθόδοξα βιβλιοπωλεία έχουν λειτουργικά βιβλία για το αναλόγιο, βίους αγίων για οικογένειες, εικόνες ευλογημένες στον ναό και κομποσχοίνια πλεγμένα από μοναχούς. Αναφέρετε ποιες δικαιοδοσίες και γλώσσες εξυπηρετείτε.\n\nΓράψτε απλά και ζεστά. Στο ορθόδοξο βιβλιοπωλείο ο κόσμος έρχεται για βοήθεια, όχι για να του πουλήσουν."
+          }
+        },
+        {
+          "type": "blessingNote", "enabled": true,
+          "eyebrow": { "en": "Our blessing", "ru": "Благословение", "el": "Η ευλογία μας" },
+          "heading": { "en": "Under the care of the parish", "ru": "Под попечением прихода", "el": "Υπό τη φροντίδα της ενορίας" },
+          "text": { "en": "Proceeds support the parish school and the poor box. Replace with how your store gives back.", "ru": "Доход идёт на приходскую школу и помощь нуждающимся. Замените своим текстом.", "el": "Τα έσοδα στηρίζουν το ενοριακό σχολείο και το φιλόπτωχο. Αντικαταστήστε με το δικό σας κείμενο." },
+          "blessing": { "en": "With the blessing of [name of the hierarch, abbot or rector]", "ru": "По благословению [имя архиерея, игумена или настоятеля]", "el": "Με την ευλογία του [όνομα επισκόπου, ηγουμένου ή προϊσταμένου]" },
+          "signature": { "en": "The bookstore staff (sample)", "ru": "Сотрудники лавки (образец)", "el": "Το προσωπικό του βιβλιοπωλείου (δείγμα)" }
+        },
+        { "type": "visitStrip", "enabled": true }
+      ]
+    },
+    {
+      "path": "about/how-we-choose-books",
+      "title": { "en": "How we choose books", "ru": "Как мы выбираем книги", "el": "Πώς επιλέγουμε βιβλία" },
+      "sections": [
+        {
+          "type": "pageHeader", "enabled": true,
+          "eyebrow": { "en": "A page added by the builder", "ru": "Страница, добавленная в конструкторе", "el": "Σελίδα που προστέθηκε από τον δημιουργό" },
+          "heading": { "en": "How we choose books", "ru": "Как мы выбираем книги", "el": "Πώς επιλέγουμε βιβλία" },
+          "intro": { "en": "This page lives at a nested path to show that new pages can go anywhere.", "ru": "Эта страница лежит по вложенному адресу, чтобы показать, что новые страницы можно добавлять куда угодно.", "el": "Η σελίδα βρίσκεται σε εμφωλευμένη διαδρομή για να φανεί ότι νέες σελίδες μπαίνουν οπουδήποτε." }
+        },
+        {
+          "type": "richText", "enabled": true,
+          "body": {
+            "en": "We read every book on the front table before it goes there. We ask our priest when we are unsure. We keep the Fathers in stock even when they sell slowly.\n\nSample text. Replace with your own approach.",
+            "ru": "Каждую книгу на главном столе мы сначала прочитали сами. Если сомневаемся, спрашиваем священника. Святых отцов держим в наличии, даже если они продаются медленно.\n\nОбразец текста. Замените своим.",
+            "el": "Διαβάζουμε κάθε βιβλίο πριν μπει στο μπροστινό τραπέζι. Ρωτάμε τον ιερέα όταν έχουμε αμφιβολία. Κρατάμε πάντα τους Πατέρες, ακόμη κι αν πουλιούνται αργά.\n\nΕνδεικτικό κείμενο. Αντικαταστήστε με το δικό σας."
+          }
+        },
+        {
+          "type": "productShelf", "enabled": true,
+          "heading": { "en": "On the front table now", "ru": "Сейчас на главном столе", "el": "Τώρα στο μπροστινό τραπέζι" },
+          "products": ["ladder", "incarnation", "psalter", "desert-sayings"]
+        }
+      ]
+    },
+    {
+      "path": "visit",
+      "title": { "en": "Visit us", "ru": "Как нас найти", "el": "Επισκεφθείτε μας" },
+      "sections": [
+        {
+          "type": "pageHeader", "enabled": true,
+          "eyebrow": { "en": "Visit", "ru": "Адрес", "el": "Επίσκεψη" },
+          "heading": { "en": "Come and browse", "ru": "Приходите полистать", "el": "Ελάτε να ξεφυλλίσετε" },
+          "intro": { "en": "The store is in the parish hall, down the stairs to the left of the church doors.", "ru": "Лавка находится в приходском доме, вниз по лестнице слева от входа в храм.", "el": "Το κατάστημα βρίσκεται στο πνευματικό κέντρο, κάτω από τη σκάλα αριστερά της εισόδου του ναού." }
+        },
+        {
+          "type": "visitInfo", "enabled": true,
+          "directions": [
+            { "title": { "en": "By car", "ru": "На машине", "el": "Με αυτοκίνητο" }, "text": { "en": "Parking behind the church. On Sundays the lot fills by 9:30.", "ru": "Парковка за храмом. По воскресеньям к 9:30 мест нет.", "el": "Στάθμευση πίσω από τον ναό. Τις Κυριακές γεμίζει ως τις 9:30." } },
+            { "title": { "en": "By bus", "ru": "На автобусе", "el": "Με λεωφορείο" }, "text": { "en": "Sample route 00 stops at Example Street, a two-minute walk.", "ru": "Условный маршрут 00, остановка «Пример-стрит», две минуты пешком.", "el": "Ενδεικτική γραμμή 00, στάση Example Street, δύο λεπτά με τα πόδια." } },
+            { "title": { "en": "Access", "ru": "Доступность", "el": "Πρόσβαση" }, "text": { "en": "A ramp and lift are by the side door. Ask at the candle desk and we will help.", "ru": "Пандус и лифт у бокового входа. Спросите у свечного ящика, мы поможем.", "el": "Ράμπα και ανελκυστήρας στην πλαϊνή είσοδο. Ρωτήστε στο παγκάρι και θα βοηθήσουμε." } }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "contact",
+      "title": { "en": "Contact", "ru": "Контакты", "el": "Επικοινωνία" },
+      "sections": [
+        {
+          "type": "pageHeader", "enabled": true,
+          "eyebrow": { "en": "Contact", "ru": "Контакты", "el": "Επικοινωνία" },
+          "heading": { "en": "Write to us", "ru": "Напишите нам", "el": "Γράψτε μας" },
+          "intro": { "en": "Questions about a book, a special order or a gift? We answer within two working days.", "ru": "Вопрос о книге, особый заказ или подарок? Отвечаем в течение двух рабочих дней.", "el": "Ερώτηση για ένα βιβλίο, ειδική παραγγελία ή δώρο; Απαντάμε σε δύο εργάσιμες." }
+        },
+        { "type": "contactForm", "enabled": true }
+      ]
+    },
+    {
+      "path": "faq",
+      "title": { "en": "FAQ", "ru": "Вопросы и ответы", "el": "Συχνές ερωτήσεις" },
+      "sections": [
+        {
+          "type": "pageHeader", "enabled": true,
+          "eyebrow": { "en": "Help", "ru": "Помощь", "el": "Βοήθεια" },
+          "heading": { "en": "Shipping, returns and other questions", "ru": "Доставка, возврат и другие вопросы", "el": "Αποστολές, επιστροφές και άλλες ερωτήσεις" }
+        },
+        { "type": "faq", "enabled": true }
+      ]
+    }
+  ],
+  "templates": {
+    "category": [ { "type": "catalogBrowser", "enabled": true } ],
+    "product": [
+      { "type": "productDetail", "enabled": true },
+      { "type": "relatedProducts", "enabled": true, "heading": { "en": "You may also like", "ru": "Вам может понравиться", "el": "Μπορεί επίσης να σας αρέσει" } }
+    ],
+    "post": [
+      { "type": "postArticle", "enabled": true },
+      { "type": "postProducts", "enabled": true, "heading": { "en": "Books in this post", "ru": "Книги из этой записи", "el": "Βιβλία της ανάρτησης" } }
+    ]
+  }
+}

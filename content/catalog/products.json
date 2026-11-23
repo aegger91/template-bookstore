@@ -1,0 +1,665 @@
+{
+  "$schema": "../../schemas/products.schema.json",
+  "products": [
+    {
+      "id": "ladder", "slug": "ladder-of-divine-ascent", "type": "book", "category": "spiritual-life",
+      "title": { "en": "The Ladder of Divine Ascent", "ru": "Лествица", "el": "Κλίμαξ" },
+      "subtitle": { "en": "Sample edition of a public-domain classic", "ru": "Образец издания классического текста", "el": "Ενδεικτική έκδοση κλασικού κειμένου" },
+      "authors": ["john-climacus"], "translators": ["sample-translator"], "publisher": "sample-monastery-press",
+      "isbn": "978-0-000000-01-0", "pages": 300, "binding": "hardcover", "languages": ["en"], "dimensions": "6 × 9 in",
+      "tradition": "patristic", "saints": [], "seasons": ["great-lent"], "flags": ["staff-pick", "featured"],
+      "releaseDate": "2026-03-01", "availability": "in_stock",
+      "formats": [
+        { "id": "hc", "format": "hardcover", "price": 30 },
+        { "id": "pb", "format": "paperback", "price": 20 },
+        { "id": "eb", "format": "ebook", "price": 10 }
+      ],
+      "art": { "kind": "book", "cloth": "oxblood", "design": "frame", "emblem": "slavic-cross" },
+      "staffNote": {
+        "en": "Read in monasteries every Great Lent. Take one step a day and do not hurry.",
+        "ru": "Её читают в монастырях каждый Великий пост. По одному слову в день, без спешки.",
+        "el": "Διαβάζεται στα μοναστήρια κάθε Μεγάλη Σαρακοστή. Ένα σκαλί τη μέρα, χωρίς βιασύνη."
+      },
+      "description": {
+        "en": "Thirty steps of the spiritual life, written by the abbot of Sinai for monks and read by all Orthodox Christians during the fast.\n\nThis is a sample listing. The text is a public-domain classic; the edition, translator, price and ISBN shown here are placeholders.",
+        "ru": "Тридцать ступеней духовной жизни, написанные игуменом Синайской горы для монахов и читаемые всеми православными во время поста.\n\nЭто образец карточки. Сам текст общественное достояние; издание, переводчик, цена и ISBN условные.",
+        "el": "Τριάντα σκαλοπάτια της πνευματικής ζωής, γραμμένα από τον ηγούμενο του Σινά για μοναχούς και διαβασμένα από όλους τους Ορθοδόξους τη Σαρακοστή.\n\nΕνδεικτική καταχώριση. Το κείμενο είναι κλασικό και ελεύθερο δικαιωμάτων· η έκδοση, ο μεταφραστής, η τιμή και το ISBN είναι ενδεικτικά."
+      },
+      "toc": [
+        { "en": "Step 1. On renunciation of the world", "ru": "Слово 1. Об отречении от жития мирского", "el": "Λόγος Α΄. Περί αποταγής" },
+        { "en": "Step 2. On detachment", "ru": "Слово 2. О беспристрастии", "el": "Λόγος Β΄. Περί απροσπαθείας" },
+        { "en": "Step 3. On exile", "ru": "Слово 3. О странничестве", "el": "Λόγος Γ΄. Περί ξενιτείας" },
+        { "en": "Step 4. On blessed and ever-memorable obedience", "ru": "Слово 4. О блаженном и приснопамятном послушании", "el": "Λόγος Δ΄. Περί υπακοής" },
+        { "en": "Step 5. On repentance", "ru": "Слово 5. О покаянии", "el": "Λόγος Ε΄. Περί μετανοίας" },
+        { "en": "Steps 6 to 29", "ru": "Слова 6–29", "el": "Λόγοι ΣΤ΄ έως ΚΘ΄" },
+        { "en": "Step 30. On faith, hope and love", "ru": "Слово 30. О вере, надежде и любви", "el": "Λόγος Λ΄. Περί πίστεως, ελπίδος και αγάπης" }
+      ],
+      "reviews": [
+        { "name": { "en": "Sample reader", "ru": "Условный читатель", "el": "Ενδεικτικός αναγνώστης" }, "rating": 5, "text": { "en": "Sample review. A sturdy binding that survives a whole Lent in a coat pocket.", "ru": "Образец отзыва. Крепкий переплёт, пережил весь пост в кармане пальто.", "el": "Ενδεικτική κριτική. Γερό δέσιμο που άντεξε όλη τη Σαρακοστή στην τσέπη του παλτού." } },
+        { "name": { "en": "Sample parish reader", "ru": "Условный чтец", "el": "Ενδεικτικός αναγνώστης ενορίας" }, "rating": 4, "text": { "en": "Sample review. Clear type and good notes for a first reading.", "ru": "Образец отзыва. Чёткий шрифт и хорошие примечания для первого чтения.", "el": "Ενδεικτική κριτική. Καθαρά γράμματα και καλές σημειώσεις για πρώτη ανάγνωση." } }
+      ]
+    },
+    {
+      "id": "philokalia-1", "slug": "philokalia-volume-one", "type": "book", "category": "spiritual-life",
+      "title": { "en": "The Philokalia, Volume One", "ru": "Добротолюбие. Том первый", "el": "Φιλοκαλία, Τόμος Α΄" },
+      "subtitle": { "en": "Sample listing of a public-domain collection", "ru": "Образец карточки классического собрания", "el": "Ενδεικτική καταχώριση κλασικής συλλογής" },
+      "authors": ["nicodemus-macarius"], "translators": ["sample-translator"], "publisher": "example-orthodox-publishing",
+      "isbn": "978-0-000000-02-0", "pages": 400, "binding": "hardcover", "languages": ["en"], "dimensions": "6.5 × 9.5 in",
+      "tradition": "greek-athonite", "saints": [], "seasons": ["great-lent"], "flags": ["new", "staff-pick"],
+      "releaseDate": "2026-10-20", "availability": "in_stock",
+      "formats": [ { "id": "hc", "format": "hardcover", "price": 40 } ],
+      "art": { "kind": "book", "cloth": "navy", "design": "panel", "emblem": "byzantine-cross" },
+      "staffNote": {
+        "en": "Start with the short texts on watchfulness. Keep a pencil nearby.",
+        "ru": "Начните с коротких текстов о трезвении. Держите карандаш под рукой.",
+        "el": "Ξεκινήστε από τα σύντομα κείμενα περί νήψεως. Έχετε ένα μολύβι δίπλα σας."
+      },
+      "description": {
+        "en": "Texts of the holy neptic Fathers on prayer and watchfulness, gathered on Mount Athos in the eighteenth century.\n\nSample listing. The edition details, price and ISBN are placeholders.",
+        "ru": "Тексты святых отцов-трезвенников о молитве и внимании, собранные на Святой Горе в XVIII веке.\n\nОбразец карточки. Данные издания, цена и ISBN условные.",
+        "el": "Κείμενα των ιερών νηπτικών Πατέρων για την προσευχή και τη νήψη, συγκεντρωμένα στο Άγιον Όρος τον 18ο αιώνα.\n\nΕνδεικτική καταχώριση. Τα στοιχεία έκδοσης, η τιμή και το ISBN είναι ενδεικτικά."
+      },
+      "toc": [
+        { "en": "Introduction (sample)", "ru": "Предисловие (образец)", "el": "Εισαγωγή (δείγμα)" },
+        { "en": "Selected texts on watchfulness", "ru": "Избранные слова о трезвении", "el": "Επιλεγμένα κείμενα περί νήψεως" },
+        { "en": "Glossary and index", "ru": "Словарь и указатель", "el": "Γλωσσάριο και ευρετήριο" }
+      ]
+    },
+    {
+      "id": "pilgrim", "slug": "way-of-a-pilgrim", "type": "book", "category": "spiritual-life",
+      "title": { "en": "The Way of a Pilgrim", "ru": "Откровенные рассказы странника духовному своему отцу", "el": "Οι περιπέτειες ενός προσκυνητή" },
+      "subtitle": { "en": "Sample edition", "ru": "Образец издания", "el": "Ενδεικτική έκδοση" },
+      "authors": ["anonymous-pilgrim"], "translators": ["sample-translator"], "publisher": "example-orthodox-publishing",
+      "isbn": "978-0-000000-03-0", "pages": 200, "binding": "paperback", "languages": ["en"], "dimensions": "5 × 8 in",
+      "tradition": "russian", "saints": [], "seasons": ["nativity-fast"], "flags": ["new", "featured"],
+      "releaseDate": "2026-11-02", "availability": "in_stock",
+      "formats": [
+        { "id": "pb", "format": "paperback", "price": 20 },
+        { "id": "au", "format": "audio", "price": 10 }
+      ],
+      "art": { "kind": "book", "cloth": "umber", "design": "band", "emblem": "slavic-cross" },
+      "description": {
+        "en": "A wanderer in nineteenth-century Russia learns to pray without ceasing. A gentle first book on the Jesus Prayer.\n\nSample listing. The edition, price and ISBN are placeholders.",
+        "ru": "Странник в России XIX века учится непрестанной молитве. Добрая первая книга об Иисусовой молитве.\n\nОбразец карточки. Издание, цена и ISBN условные.",
+        "el": "Ένας οδοιπόρος στη Ρωσία του 19ου αιώνα μαθαίνει να προσεύχεται αδιαλείπτως. Ένα ήπιο πρώτο βιβλίο για την ευχή του Ιησού.\n\nΕνδεικτική καταχώριση. Η έκδοση, η τιμή και το ISBN είναι ενδεικτικά."
+      },
+      "toc": [
+        { "en": "The first narrative", "ru": "Рассказ первый", "el": "Πρώτη διήγηση" },
+        { "en": "The second narrative", "ru": "Рассказ второй", "el": "Δεύτερη διήγηση" },
+        { "en": "The third narrative", "ru": "Рассказ третий", "el": "Τρίτη διήγηση" },
+        { "en": "The fourth narrative", "ru": "Рассказ четвёртый", "el": "Τέταρτη διήγηση" }
+      ],
+      "reviews": [
+        { "name": { "en": "Sample reader", "ru": "Условный читатель", "el": "Ενδεικτικός αναγνώστης" }, "rating": 5, "text": { "en": "Sample review. I gave this to my godson and then bought a second copy for myself.", "ru": "Образец отзыва. Подарил крестнику, потом купил второй экземпляр себе.", "el": "Ενδεικτική κριτική. Το χάρισα στον βαφτιστικό μου και μετά πήρα άλλο ένα για μένα." } }
+      ]
+    },
+    {
+      "id": "unseen-warfare", "slug": "unseen-warfare", "type": "book", "category": "spiritual-life",
+      "title": { "en": "Unseen Warfare", "ru": "Невидимая брань", "el": "Αόρατος πόλεμος" },
+      "subtitle": { "en": "Sample edition", "ru": "Образец издания", "el": "Ενδεικτική έκδοση" },
+      "authors": ["nicodemus"], "translators": ["sample-translator"], "publisher": "sample-monastery-press",
+      "isbn": "978-0-000000-04-0", "pages": 280, "binding": "paperback", "languages": ["en"], "dimensions": "5.5 × 8.5 in",
+      "tradition": "greek-athonite", "saints": [], "seasons": ["great-lent"], "flags": [],
+      "releaseDate": "2025-09-01", "availability": "out_of_stock",
+      "formats": [ { "id": "pb", "format": "paperback", "price": 20 } ],
+      "art": { "kind": "book", "cloth": "slate", "design": "frame", "emblem": "byzantine-cross" },
+      "description": {
+        "en": "Counsel on the struggle against the passions and on guarding the heart.\n\nSample listing, shown out of stock so you can see the back-in-stock form.",
+        "ru": "Наставления о борьбе со страстями и хранении сердца.\n\nОбразец карточки: товар показан как отсутствующий, чтобы была видна форма уведомления.",
+        "el": "Συμβουλές για τον αγώνα κατά των παθών και τη φύλαξη της καρδιάς.\n\nΕνδεικτική καταχώριση, εμφανίζεται εξαντλημένη ώστε να φαίνεται η φόρμα ειδοποίησης."
+      }
+    },
+    {
+      "id": "jesus-prayer-guide", "slug": "short-guide-to-the-jesus-prayer", "type": "book", "category": "spiritual-life",
+      "title": { "en": "A Short Guide to the Jesus Prayer (Sample Title)", "ru": "Краткое руководство к Иисусовой молитве (условное название)", "el": "Σύντομος οδηγός για την ευχή του Ιησού (ενδεικτικός τίτλος)" },
+      "authors": ["sample-author"], "translators": [], "publisher": "st-example-editions",
+      "isbn": "978-0-000000-05-0", "pages": 96, "binding": "paperback", "languages": ["en"], "dimensions": "4.5 × 7 in",
+      "tradition": "pan-orthodox", "saints": [], "seasons": ["nativity-fast", "great-lent"], "flags": ["new"],
+      "releaseDate": "2026-11-10", "availability": "in_stock",
+      "formats": [ { "id": "pb", "format": "paperback", "price": 10 }, { "id": "eb", "format": "ebook", "price": 10 } ],
+      "art": { "kind": "book", "cloth": "cream", "design": "medallion", "emblem": "prayer-rope" },
+      "description": {
+        "en": "A sample title for a small parish booklet. Use this slot for a new release from a local author.",
+        "ru": "Условное название небольшой приходской брошюры. Используйте эту карточку для новинки местного автора.",
+        "el": "Ενδεικτικός τίτλος μικρού ενοριακού φυλλαδίου. Χρησιμοποιήστε την καταχώριση για νέα έκδοση τοπικού συγγραφέα."
+      }
+    },
+    {
+      "id": "incarnation", "slug": "on-the-incarnation", "type": "book", "category": "theology-history",
+      "title": { "en": "On the Incarnation", "ru": "О воплощении Бога Слова", "el": "Περί της ενανθρωπήσεως του Λόγου" },
+      "subtitle": { "en": "Sample edition", "ru": "Образец издания", "el": "Ενδεικτική έκδοση" },
+      "authors": ["athanasius"], "translators": ["sample-translator"], "publisher": "example-orthodox-publishing",
+      "isbn": "978-0-000000-06-0", "pages": 128, "binding": "paperback", "languages": ["en"], "dimensions": "5 × 8 in",
+      "tradition": "patristic", "saints": [], "seasons": ["nativity-fast"], "flags": ["staff-pick"],
+      "releaseDate": "2024-12-01", "availability": "in_stock",
+      "formats": [ { "id": "pb", "format": "paperback", "price": 20 }, { "id": "eb", "format": "ebook", "price": 10 } ],
+      "art": { "kind": "book", "cloth": "forest", "design": "band", "emblem": "icxc" },
+      "staffNote": {
+        "en": "The best short book to read before Nativity. Two evenings, maybe three.",
+        "ru": "Лучшая короткая книга перед Рождеством. Два вечера, может быть три.",
+        "el": "Το καλύτερο σύντομο βιβλίο πριν από τα Χριστούγεννα. Δύο βράδια, ίσως τρία."
+      },
+      "description": {
+        "en": "Why the Word of God became man, explained by the great defender of Nicaea.\n\nSample listing. Edition details, price and ISBN are placeholders.",
+        "ru": "Почему Слово Божие стало человеком, объясняет великий защитник Никейской веры.\n\nОбразец карточки. Данные издания, цена и ISBN условные.",
+        "el": "Γιατί ο Λόγος του Θεού έγινε άνθρωπος, όπως το εξηγεί ο μεγάλος υπερασπιστής της Νίκαιας.\n\nΕνδεικτική καταχώριση. Τα στοιχεία έκδοσης, η τιμή και το ISBN είναι ενδεικτικά."
+      }
+    },
+    {
+      "id": "exact-exposition", "slug": "exact-exposition-of-the-orthodox-faith", "type": "book", "category": "theology-history",
+      "title": { "en": "An Exact Exposition of the Orthodox Faith", "ru": "Точное изложение православной веры", "el": "Έκδοσις ακριβής της ορθοδόξου πίστεως" },
+      "subtitle": { "en": "Sample edition", "ru": "Образец издания", "el": "Ενδεικτική έκδοση" },
+      "authors": ["john-of-damascus"], "translators": ["sample-translator"], "publisher": "sample-monastery-press",
+      "isbn": "978-0-000000-07-0", "pages": 360, "binding": "hardcover", "languages": ["en"], "dimensions": "6 × 9 in",
+      "tradition": "patristic", "saints": [], "seasons": [], "flags": [],
+      "releaseDate": "2023-05-01", "availability": "in_stock",
+      "formats": [ { "id": "hc", "format": "hardcover", "price": 40 } ],
+      "art": { "kind": "book", "cloth": "navy", "design": "frame", "emblem": "icxc" },
+      "description": {
+        "en": "The faith of the Church set out in order, from the Holy Trinity to the veneration of icons.\n\nSample listing.",
+        "ru": "Вера Церкви, изложенная по порядку: от Святой Троицы до почитания икон.\n\nОбразец карточки.",
+        "el": "Η πίστη της Εκκλησίας με τάξη, από την Αγία Τριάδα έως την τιμή των εικόνων.\n\nΕνδεικτική καταχώριση."
+      }
+    },
+    {
+      "id": "holy-spirit", "slug": "on-the-holy-spirit", "type": "book", "category": "theology-history",
+      "title": { "en": "On the Holy Spirit", "ru": "О Святом Духе", "el": "Περί του Αγίου Πνεύματος" },
+      "subtitle": { "en": "Sample edition", "ru": "Образец издания", "el": "Ενδεικτική έκδοση" },
+      "authors": ["basil-the-great"], "translators": ["sample-translator"], "publisher": "example-orthodox-publishing",
+      "isbn": "978-0-000000-08-0", "pages": 140, "binding": "paperback", "languages": ["en", "el"], "dimensions": "5 × 8 in",
+      "tradition": "patristic", "saints": [], "seasons": ["pascha"], "flags": [],
+      "releaseDate": "2022-06-01", "availability": "in_stock",
+      "formats": [ { "id": "pb", "format": "paperback", "price": 20 } ],
+      "art": { "kind": "book", "cloth": "plum", "design": "medallion", "emblem": "byzantine-cross" },
+      "description": {
+        "en": "St. Basil's defense of the divinity of the Holy Spirit, with Greek text facing the translation.\n\nSample listing.",
+        "ru": "Защита Божества Святого Духа свт. Василием Великим, с греческим текстом параллельно переводу.\n\nОбразец карточки.",
+        "el": "Η υπεράσπιση της θεότητας του Αγίου Πνεύματος από τον Μέγα Βασίλειο, με το πρωτότυπο απέναντι από τη μετάφραση.\n\nΕνδεικτική καταχώριση."
+      }
+    },
+    {
+      "id": "councils-history", "slug": "sample-history-of-the-councils", "type": "book", "category": "theology-history",
+      "title": { "en": "A Sample History of the Councils", "ru": "Условная история Вселенских соборов", "el": "Ενδεικτική ιστορία των Οικουμενικών Συνόδων" },
+      "authors": ["sample-author"], "translators": [], "publisher": "example-orthodox-publishing",
+      "isbn": "978-0-000000-09-0", "pages": 320, "binding": "hardcover", "languages": ["en"], "dimensions": "6 × 9 in",
+      "tradition": "pan-orthodox", "saints": [], "seasons": [], "flags": ["new"],
+      "releaseDate": "2027-01-20", "availability": "preorder",
+      "formats": [ { "id": "hc", "format": "hardcover", "price": 30 } ],
+      "art": { "kind": "book", "cloth": "slate", "design": "panel", "emblem": "byzantine-cross" },
+      "description": {
+        "en": "A sample preorder listing. Shows the release date and the preorder button in place of add to cart.",
+        "ru": "Образец предзаказа. Показывает дату выхода и кнопку предзаказа вместо кнопки «В корзину».",
+        "el": "Ενδεικτική προπαραγγελία. Δείχνει την ημερομηνία κυκλοφορίας και το κουμπί προπαραγγελίας."
+      }
+    },
+    {
+      "id": "life-anthony", "slug": "life-of-st-anthony", "type": "book", "category": "lives-of-saints",
+      "title": { "en": "The Life of St. Anthony the Great", "ru": "Житие преподобного Антония Великого", "el": "Βίος του Οσίου Αντωνίου του Μεγάλου" },
+      "subtitle": { "en": "Sample edition", "ru": "Образец издания", "el": "Ενδεικτική έκδοση" },
+      "authors": ["athanasius"], "translators": ["sample-translator"], "publisher": "sample-monastery-press",
+      "isbn": "978-0-000000-10-0", "pages": 110, "binding": "paperback", "languages": ["en"], "dimensions": "5 × 8 in",
+      "tradition": "patristic", "saints": [], "seasons": ["great-lent"], "flags": [],
+      "releaseDate": "2024-01-17", "availability": "in_stock",
+      "formats": [ { "id": "pb", "format": "paperback", "price": 20 } ],
+      "art": { "kind": "book", "cloth": "umber", "design": "frame", "emblem": "lampada" },
+      "description": {
+        "en": "The father of monks, as remembered by St. Athanasius who knew him.\n\nSample listing.",
+        "ru": "Отец монашества в воспоминаниях свт. Афанасия, знавшего его лично.\n\nОбразец карточки.",
+        "el": "Ο πατέρας των μοναχών, όπως τον θυμάται ο Μέγας Αθανάσιος που τον γνώρισε.\n\nΕνδεικτική καταχώριση."
+      }
+    },
+    {
+      "id": "spiritual-meadow", "slug": "the-spiritual-meadow", "type": "book", "category": "lives-of-saints",
+      "title": { "en": "The Spiritual Meadow", "ru": "Луг духовный", "el": "Λειμωνάριον" },
+      "subtitle": { "en": "Sample edition", "ru": "Образец издания", "el": "Ενδεικτική έκδοση" },
+      "authors": ["john-moschos"], "translators": ["sample-translator"], "publisher": "example-orthodox-publishing",
+      "isbn": "978-0-000000-11-0", "pages": 260, "binding": "paperback", "languages": ["en"], "dimensions": "5.5 × 8.5 in",
+      "tradition": "patristic", "saints": [], "seasons": [], "flags": [],
+      "releaseDate": "2023-02-01", "availability": "low_stock",
+      "formats": [ { "id": "pb", "format": "paperback", "price": 20 } ],
+      "art": { "kind": "book", "cloth": "forest", "design": "panel", "emblem": "vine" },
+      "description": {
+        "en": "Short stories of monks and holy people collected on journeys through Palestine, Egypt and Sinai.\n\nSample listing.",
+        "ru": "Короткие рассказы о монахах и подвижниках, собранные в странствиях по Палестине, Египту и Синаю.\n\nОбразец карточки.",
+        "el": "Σύντομες διηγήσεις για μοναχούς και αγίους, συγκεντρωμένες σε ταξίδια στην Παλαιστίνη, την Αίγυπτο και το Σινά.\n\nΕνδεικτική καταχώριση."
+      }
+    },
+    {
+      "id": "desert-sayings", "slug": "sayings-of-the-desert-fathers", "type": "book", "category": "lives-of-saints",
+      "title": { "en": "Sayings of the Desert Fathers, a Sample Selection", "ru": "Изречения египетских отцов. Избранное (образец)", "el": "Γεροντικό, ενδεικτική επιλογή" },
+      "authors": [], "translators": ["sample-translator"], "publisher": "sample-monastery-press",
+      "isbn": "978-0-000000-12-0", "pages": 180, "binding": "paperback", "languages": ["en"], "dimensions": "5 × 7.5 in",
+      "tradition": "patristic", "saints": [], "seasons": ["great-lent"], "flags": ["staff-pick"],
+      "releaseDate": "2025-02-01", "availability": "in_stock",
+      "formats": [ { "id": "pb", "format": "paperback", "price": 20 } ],
+      "art": { "kind": "book", "cloth": "cream", "design": "band", "emblem": "lampada" },
+      "staffNote": {
+        "en": "One saying with morning coffee. It is enough for the day.",
+        "ru": "Одно изречение за утренним чаем. На день хватает.",
+        "el": "Ένα απόφθεγμα με τον πρωινό καφέ. Φτάνει για όλη τη μέρα."
+      },
+      "description": {
+        "en": "Brief words of the abbas and ammas of Egypt, arranged by theme.\n\nSample listing.",
+        "ru": "Краткие слова авв и амм Египта, по темам.\n\nОбразец карточки.",
+        "el": "Σύντομα λόγια των αββάδων και των αμμάδων της Αιγύπτου, κατά θέμα.\n\nΕνδεικτική καταχώριση."
+      }
+    },
+    {
+      "id": "mary-of-egypt", "slug": "life-of-st-mary-of-egypt", "type": "book", "category": "lives-of-saints",
+      "title": { "en": "The Life of St. Mary of Egypt", "ru": "Житие преподобной Марии Египетской", "el": "Βίος της Οσίας Μαρίας της Αιγυπτίας" },
+      "subtitle": { "en": "Sample booklet edition", "ru": "Образец издания брошюры", "el": "Ενδεικτική έκδοση φυλλαδίου" },
+      "authors": ["sophronius"], "translators": ["sample-translator"], "publisher": "st-example-editions",
+      "isbn": "978-0-000000-13-0", "pages": 48, "binding": "paperback", "languages": ["en", "ru"], "dimensions": "5 × 7 in",
+      "tradition": "patristic", "saints": ["mary-of-egypt"], "seasons": ["great-lent"], "flags": [],
+      "releaseDate": "2025-03-01", "availability": "in_stock",
+      "formats": [ { "id": "pb", "format": "paperback", "price": 10 } ],
+      "art": { "kind": "book", "cloth": "plum", "design": "medallion", "emblem": "slavic-cross" },
+      "description": {
+        "en": "Read in church on Thursday of the fifth week of Great Lent with the Great Canon of St. Andrew.\n\nSample listing.",
+        "ru": "Читается в храме в четверг пятой седмицы Великого поста вместе с Великим каноном прп. Андрея Критского.\n\nОбразец карточки.",
+        "el": "Διαβάζεται στον ναό την Πέμπτη της Ε΄ εβδομάδας των Νηστειών, μαζί με τον Μέγα Κανόνα του Αγίου Ανδρέα.\n\nΕνδεικτική καταχώριση."
+      }
+    },
+    {
+      "id": "december-saints", "slug": "lives-of-the-saints-december-sample-reader", "type": "book", "category": "lives-of-saints",
+      "title": { "en": "Lives of the Saints for December (Sample Reader)", "ru": "Жития святых на декабрь (условное издание)", "el": "Βίοι Αγίων Δεκεμβρίου (ενδεικτική έκδοση)" },
+      "authors": ["sample-author"], "translators": [], "publisher": "st-example-editions",
+      "isbn": "978-0-000000-14-0", "pages": 220, "binding": "hardcover", "languages": ["en"], "dimensions": "6 × 9 in",
+      "tradition": "pan-orthodox", "saints": ["nicholas", "herman-alaska"], "seasons": ["nativity-fast"], "flags": ["new", "featured"],
+      "releaseDate": "2026-11-01", "availability": "in_stock",
+      "formats": [ { "id": "hc", "format": "hardcover", "price": 30 } ],
+      "art": { "kind": "book", "cloth": "oxblood", "design": "panel", "emblem": "star" },
+      "description": {
+        "en": "A sample reader with one short life for each day of the month. Use this slot for a seasonal title.",
+        "ru": "Условная книга для чтения: по одному краткому житию на каждый день месяца.",
+        "el": "Ενδεικτικό ανάγνωσμα με έναν σύντομο βίο για κάθε μέρα του μήνα."
+      }
+    },
+    {
+      "id": "psalter", "slug": "the-psalter-sample-edition", "type": "book", "category": "scripture-prayer",
+      "title": { "en": "The Psalter (Sample Edition)", "ru": "Псалтирь (образец издания)", "el": "Ψαλτήριον (ενδεικτική έκδοση)" },
+      "authors": [], "translators": ["sample-translator"], "publisher": "sample-monastery-press",
+      "isbn": "978-0-000000-15-0", "pages": 300, "binding": "hardcover", "languages": ["en"], "dimensions": "4.5 × 7 in",
+      "tradition": "pan-orthodox", "saints": [], "seasons": [], "flags": ["staff-pick"],
+      "releaseDate": "2025-08-01", "availability": "in_stock",
+      "formats": [ { "id": "hc", "format": "hardcover", "price": 30 }, { "id": "pb", "format": "paperback", "price": 20 } ],
+      "art": { "kind": "book", "cloth": "oxblood", "design": "medallion", "emblem": "byzantine-cross" },
+      "staffNote": {
+        "en": "Divided into kathismata for reading at home. The ribbon is a nice touch.",
+        "ru": "Разделена на кафизмы для домашнего чтения. Закладка-ленточка очень кстати.",
+        "el": "Χωρισμένο σε καθίσματα για ανάγνωση στο σπίτι. Η κορδέλα-σελιδοδείκτης βοηθά."
+      },
+      "description": {
+        "en": "The 150 psalms arranged in twenty kathismata, as read in Orthodox services.\n\nSample listing.",
+        "ru": "150 псалмов, разделённые на двадцать кафизм, как читаются за богослужением.\n\nОбразец карточки.",
+        "el": "Οι 150 ψαλμοί χωρισμένοι σε είκοσι καθίσματα, όπως διαβάζονται στις ακολουθίες.\n\nΕνδεικτική καταχώριση."
+      }
+    },
+    {
+      "id": "prayer-book", "slug": "pocket-prayer-book-sample-edition", "type": "book", "category": "scripture-prayer",
+      "title": { "en": "Pocket Prayer Book (Sample Edition)", "ru": "Карманный молитвослов (образец)", "el": "Προσευχητάριο τσέπης (ενδεικτική έκδοση)" },
+      "authors": [], "translators": ["sample-translator"], "publisher": "st-example-editions",
+      "isbn": "978-0-000000-16-0", "pages": 160, "binding": "paperback", "languages": ["en", "ru", "el"], "dimensions": "4 × 6 in",
+      "tradition": "pan-orthodox", "saints": [], "seasons": ["pascha"], "flags": [],
+      "releaseDate": "2024-04-01", "availability": "in_stock",
+      "formats": [ { "id": "pb", "format": "paperback", "price": 10 } ],
+      "art": { "kind": "book", "cloth": "navy", "design": "band", "emblem": "slavic-cross" },
+      "description": {
+        "en": "Morning and evening prayers, prayers before Communion and the Paschal Hours. Available in three languages.\n\nSample listing.",
+        "ru": "Утренние и вечерние молитвы, последование ко Причащению и Пасхальные часы. На трёх языках.\n\nОбразец карточки.",
+        "el": "Πρωινές και βραδινές προσευχές, ακολουθία της Θείας Μεταλήψεως και Ώρες του Πάσχα. Σε τρεις γλώσσες.\n\nΕνδεικτική καταχώριση."
+      }
+    },
+    {
+      "id": "gospel-book", "slug": "holy-gospel-sample-altar-edition", "type": "book", "category": "scripture-prayer",
+      "title": { "en": "The Holy Gospel (Sample Altar Edition)", "ru": "Святое Евангелие (напрестольное, образец)", "el": "Ιερό Ευαγγέλιο (ενδεικτική έκδοση Αγίας Τραπέζης)" },
+      "authors": [], "translators": [], "publisher": "placeholder-skete-books",
+      "isbn": "978-0-000000-17-0", "pages": 420, "binding": "hardcover", "languages": ["csl", "el"], "dimensions": "9 × 12 in",
+      "tradition": "pan-orthodox", "saints": [], "seasons": ["pascha"], "flags": [],
+      "releaseDate": "2027-02-01", "availability": "preorder",
+      "formats": [ { "id": "hc", "format": "hardcover", "price": 200 } ],
+      "art": { "kind": "book", "cloth": "oxblood", "design": "gospel", "emblem": "icxc" },
+      "description": {
+        "en": "A sample altar Gospel listing for parishes. Arranged by the reading cycle of the Church year.\n\nSample listing, shown as a preorder.",
+        "ru": "Образец карточки напрестольного Евангелия для приходов. Разделено на зачала по годовому кругу.\n\nОбразец предзаказа.",
+        "el": "Ενδεικτική καταχώριση Ευαγγελίου Αγίας Τραπέζης για ενορίες, κατά τις περικοπές του εκκλησιαστικού έτους.\n\nΕνδεικτική προπαραγγελία."
+      }
+    },
+    {
+      "id": "liturgy-chrysostom", "slug": "divine-liturgy-of-st-john-chrysostom", "type": "book", "category": "liturgical",
+      "title": { "en": "The Divine Liturgy of St. John Chrysostom", "ru": "Божественная литургия святителя Иоанна Златоуста", "el": "Η Θεία Λειτουργία του Αγίου Ιωάννου του Χρυσοστόμου" },
+      "subtitle": { "en": "Sample pew edition, Greek and English", "ru": "Образец издания для молящихся, греческий и английский", "el": "Ενδεικτική έκδοση για τους πιστούς, ελληνικά και αγγλικά" },
+      "authors": ["john-chrysostom"], "translators": ["sample-translator"], "publisher": "placeholder-skete-books",
+      "isbn": "978-0-000000-18-0", "pages": 120, "binding": "paperback", "languages": ["el", "en"], "dimensions": "5.5 × 8.5 in",
+      "tradition": "greek-athonite", "saints": ["john-chrysostom"], "seasons": [], "flags": ["featured"],
+      "releaseDate": "2025-11-13", "availability": "in_stock",
+      "formats": [ { "id": "pb", "format": "paperback", "price": 10 } ],
+      "art": { "kind": "book", "cloth": "navy", "design": "panel", "emblem": "byzantine-cross" },
+      "description": {
+        "en": "The text of the Divine Liturgy with facing Greek and English, sized for the pew.\n\nSample listing. Parishes can order in bulk from the parish orders page.",
+        "ru": "Текст Божественной литургии на греческом и английском языках, удобного для храма формата.\n\nОбразец карточки. Приходы могут заказать оптом.",
+        "el": "Το κείμενο της Θείας Λειτουργίας σε ελληνικά και αγγλικά, σε σχήμα για το στασίδι.\n\nΕνδεικτική καταχώριση. Οι ενορίες μπορούν να παραγγείλουν χονδρικά."
+      }
+    },
+    {
+      "id": "horologion", "slug": "horologion-sample-edition", "type": "book", "category": "liturgical",
+      "title": { "en": "Horologion, the Book of Hours (Sample Edition)", "ru": "Часослов (образец издания)", "el": "Ωρολόγιον (ενδεικτική έκδοση)" },
+      "authors": [], "translators": [], "publisher": "placeholder-skete-books",
+      "isbn": "978-0-000000-19-0", "pages": 380, "binding": "hardcover", "languages": ["csl"], "dimensions": "6 × 9 in",
+      "tradition": "russian", "saints": [], "seasons": [], "flags": [],
+      "releaseDate": "2024-09-01", "availability": "in_stock",
+      "formats": [ { "id": "hc", "format": "hardcover", "price": 40 } ],
+      "art": { "kind": "book", "cloth": "umber", "design": "frame", "emblem": "slavic-cross" },
+      "description": {
+        "en": "The fixed services of the daily cycle in Church Slavonic, for readers and kliros.\n\nSample listing.",
+        "ru": "Неизменяемые службы суточного круга на церковнославянском языке, для чтецов и клироса.\n\nОбразец карточки.",
+        "el": "Οι σταθερές ακολουθίες του ημερήσιου κύκλου στα εκκλησιαστικά σλαβονικά, για αναγνώστες και ψάλτες.\n\nΕνδεικτική καταχώριση."
+      }
+    },
+    {
+      "id": "paschal-homily", "slug": "paschal-homily-booklet", "type": "book", "category": "liturgical",
+      "title": { "en": "The Paschal Homily of St. John Chrysostom (Sample Booklet)", "ru": "Огласительное слово на Пасху свт. Иоанна Златоуста (образец брошюры)", "el": "Κατηχητικός λόγος του Πάσχα του Αγίου Ιωάννου του Χρυσοστόμου (ενδεικτικό φυλλάδιο)" },
+      "authors": ["john-chrysostom"], "translators": ["sample-translator"], "publisher": "st-example-editions",
+      "isbn": "978-0-000000-20-0", "pages": 16, "binding": "paperback", "languages": ["en", "ru", "el"], "dimensions": "5 × 7 in",
+      "tradition": "patristic", "saints": ["john-chrysostom"], "seasons": ["pascha"], "flags": [],
+      "releaseDate": "2025-04-01", "availability": "in_stock",
+      "formats": [ { "id": "pb", "format": "paperback", "price": 10 } ],
+      "art": { "kind": "book", "cloth": "cream", "design": "medallion", "emblem": "icxc" },
+      "description": {
+        "en": "Read at the end of Paschal Matins in every Orthodox church. A small booklet to give away at Pascha.\n\nSample listing.",
+        "ru": "Читается в конце пасхальной утрени в каждом православном храме. Маленькая брошюра для раздачи на Пасху.\n\nОбразец карточки.",
+        "el": "Διαβάζεται στο τέλος του Όρθρου του Πάσχα σε κάθε ορθόδοξο ναό. Ένα μικρό φυλλάδιο για να το χαρίσετε.\n\nΕνδεικτική καταχώριση."
+      }
+    },
+    {
+      "id": "star-picture-book", "slug": "the-night-the-star-shone", "type": "book", "category": "children",
+      "title": { "en": "The Night the Star Shone (Sample Picture Book)", "ru": "Ночь, когда засияла звезда (условная книжка с картинками)", "el": "Η νύχτα που έλαμψε το αστέρι (ενδεικτικό εικονογραφημένο βιβλίο)" },
+      "authors": ["example-writer"], "translators": [], "publisher": "st-example-editions",
+      "isbn": "978-0-000000-21-0", "pages": 32, "binding": "hardcover", "languages": ["en"], "dimensions": "10 × 10 in",
+      "tradition": "pan-orthodox", "saints": [], "seasons": ["nativity-fast"], "flags": ["new", "featured"],
+      "releaseDate": "2026-11-15", "availability": "in_stock",
+      "formats": [ { "id": "hc", "format": "hardcover", "price": 20 } ],
+      "art": { "kind": "book", "cloth": "navy", "design": "picture", "emblem": "star" },
+      "description": {
+        "en": "A sample picture book listing about the Nativity, for reading aloud during the fast.",
+        "ru": "Условная книжка с картинками о Рождестве, для чтения вслух во время поста.",
+        "el": "Ενδεικτικό εικονογραφημένο βιβλίο για τη Γέννηση, για ανάγνωση φωναχτά τη Σαρακοστή."
+      }
+    },
+    {
+      "id": "saints-coloring", "slug": "my-book-of-saints-to-color", "type": "book", "category": "children",
+      "title": { "en": "My Book of Saints to Color (Sample)", "ru": "Моя книжка-раскраска о святых (образец)", "el": "Το βιβλίο μου με αγίους για ζωγραφική (δείγμα)" },
+      "authors": ["example-writer"], "translators": [], "publisher": "st-example-editions",
+      "isbn": "978-0-000000-22-0", "pages": 48, "binding": "paperback", "languages": ["en"], "dimensions": "8.5 × 11 in",
+      "tradition": "pan-orthodox", "saints": ["nicholas", "seraphim-sarov", "herman-alaska"], "seasons": [], "flags": [],
+      "releaseDate": "2025-06-01", "availability": "in_stock",
+      "formats": [ { "id": "pb", "format": "paperback", "price": 10 } ],
+      "art": { "kind": "book", "cloth": "cream", "design": "picture", "emblem": "halo" },
+      "description": {
+        "en": "Line drawings of saints with a short life on each facing page. Sample listing.",
+        "ru": "Контурные рисунки святых и краткое житие на соседней странице. Образец карточки.",
+        "el": "Περιγράμματα αγίων με σύντομο βίο στη διπλανή σελίδα. Ενδεικτική καταχώριση."
+      }
+    },
+    {
+      "id": "nicholas-story", "slug": "st-nicholas-and-the-three-coins", "type": "book", "category": "children",
+      "title": { "en": "St. Nicholas and the Three Coins (Sample Story)", "ru": "Святитель Николай и три монеты (условный рассказ)", "el": "Ο Άγιος Νικόλαος και τα τρία νομίσματα (ενδεικτική ιστορία)" },
+      "authors": ["example-writer"], "translators": [], "publisher": "st-example-editions",
+      "isbn": "978-0-000000-23-0", "pages": 32, "binding": "hardcover", "languages": ["en", "ru"], "dimensions": "9 × 9 in",
+      "tradition": "pan-orthodox", "saints": ["nicholas"], "seasons": ["nativity-fast"], "flags": ["staff-pick"],
+      "releaseDate": "2025-11-20", "availability": "in_stock",
+      "formats": [ { "id": "hc", "format": "hardcover", "price": 20 } ],
+      "art": { "kind": "book", "cloth": "oxblood", "design": "picture", "emblem": "halo" },
+      "staffNote": {
+        "en": "Our Sunday school asks for this every December. Read it on the eve of his feast.",
+        "ru": "Наша воскресная школа просит её каждый декабрь. Читайте накануне праздника.",
+        "el": "Το κατηχητικό μας το ζητά κάθε Δεκέμβριο. Διαβάστε το την παραμονή της γιορτής."
+      },
+      "description": {
+        "en": "A sample children's story retelling the gift of the three coins. Sample listing.",
+        "ru": "Условный детский рассказ о трёх монетах. Образец карточки.",
+        "el": "Ενδεικτική παιδική ιστορία για τα τρία νομίσματα. Ενδεικτική καταχώριση."
+      }
+    },
+    {
+      "id": "znamenny-vigil", "slug": "vigil-in-znamenny-chant-sample-recording", "type": "music", "category": "music-chant",
+      "title": { "en": "Vigil in Znamenny Chant (Sample Recording)", "ru": "Всенощное бдение. Знаменный распев (условная запись)", "el": "Αγρυπνία σε ζναμένι μέλος (ενδεικτική ηχογράφηση)" },
+      "authors": ["placeholder-choir"], "translators": [], "publisher": "placeholder-skete-books",
+      "isbn": null, "pages": null, "binding": null, "languages": ["csl"], "dimensions": null,
+      "tradition": "russian", "saints": [], "seasons": [], "flags": ["new"],
+      "releaseDate": "2026-10-01", "availability": "in_stock",
+      "formats": [ { "id": "cd", "format": "cd", "price": 20 }, { "id": "dl", "format": "audio", "price": 10 } ],
+      "art": { "kind": "audio", "cloth": "navy", "emblem": "slavic-cross" },
+      "specs": [
+        { "label": { "en": "Tracks", "ru": "Треков", "el": "Κομμάτια" }, "value": "18" },
+        { "label": { "en": "Running time", "ru": "Длительность", "el": "Διάρκεια" }, "value": { "en": "About 70 minutes (sample)", "ru": "Около 70 минут (условно)", "el": "Περίπου 70 λεπτά (ενδεικτικά)" } }
+      ],
+      "description": {
+        "en": "A sample recording listing. Use it for a choir or monastery album you carry.",
+        "ru": "Образец карточки записи. Используйте её для альбома хора или монастыря.",
+        "el": "Ενδεικτική καταχώριση ηχογράφησης για άλμπουμ χορού ή μονής."
+      }
+    },
+    {
+      "id": "holy-week-chant", "slug": "hymns-of-holy-week-byzantine-chant", "type": "music", "category": "music-chant",
+      "title": { "en": "Hymns of Holy Week in Byzantine Chant (Sample Recording)", "ru": "Песнопения Страстной седмицы. Византийский распев (условная запись)", "el": "Ύμνοι της Μεγάλης Εβδομάδας σε βυζαντινό μέλος (ενδεικτική ηχογράφηση)" },
+      "authors": ["placeholder-choir"], "translators": [], "publisher": "placeholder-skete-books",
+      "isbn": null, "pages": null, "binding": null, "languages": ["el"], "dimensions": null,
+      "tradition": "greek-athonite", "saints": [], "seasons": ["great-lent"], "flags": [],
+      "releaseDate": "2025-03-20", "availability": "in_stock",
+      "formats": [ { "id": "dl", "format": "audio", "price": 10 } ],
+      "art": { "kind": "audio", "cloth": "plum", "emblem": "byzantine-cross" },
+      "description": {
+        "en": "Sample recording listing for Holy Week hymns.",
+        "ru": "Образец карточки записи песнопений Страстной седмицы.",
+        "el": "Ενδεικτική καταχώριση ηχογράφησης ύμνων της Μεγάλης Εβδομάδας."
+      }
+    },
+    {
+      "id": "icon-theotokos", "slug": "icon-of-the-theotokos-mounted-print", "type": "icon", "category": "icons",
+      "title": { "en": "Icon of the Theotokos, Mounted Print (Sample Listing)", "ru": "Икона Божией Матери, печать на дереве (образец)", "el": "Εικόνα της Θεοτόκου, εκτύπωση σε ξύλο (δείγμα)" },
+      "authors": [], "translators": [], "publisher": null,
+      "isbn": null, "pages": null, "binding": null, "languages": [], "dimensions": "8 × 10 in",
+      "tradition": "pan-orthodox", "saints": ["theotokos"], "seasons": ["nativity-fast"], "flags": ["featured"],
+      "releaseDate": "2025-08-15", "availability": "in_stock",
+      "formats": [ { "id": "s", "format": "item", "price": 40, "label": { "en": "8 × 10 in", "ru": "20 × 25 см", "el": "20 × 25 εκ." } }, { "id": "m", "format": "item", "price": 60, "label": { "en": "11 × 14 in", "ru": "28 × 36 см", "el": "28 × 36 εκ." } } ],
+      "art": { "kind": "icon", "subject": "theotokos" },
+      "specs": [
+        { "label": { "en": "Mounting", "ru": "Основа", "el": "Βάση" }, "value": { "en": "Wood panel with a recessed field (sample)", "ru": "Доска с ковчегом (условно)", "el": "Ξύλο με σκάφη (ενδεικτικά)" } },
+        { "label": { "en": "Blessing", "ru": "Освящение", "el": "Αγιασμός" }, "value": { "en": "Ask your priest to bless the icon", "ru": "Попросите священника освятить икону", "el": "Ζητήστε από τον ιερέα να ευλογήσει την εικόνα" } }
+      ],
+      "description": {
+        "en": "Placeholder artwork. Replace with a photograph of the icon you sell, shown as painted and never mirrored.",
+        "ru": "Изображение-заглушка. Замените фотографией иконы, как она написана, без зеркального отражения.",
+        "el": "Ενδεικτική απεικόνιση. Αντικαταστήστε με φωτογραφία της εικόνας όπως είναι, χωρίς κατοπτρισμό."
+      }
+    },
+    {
+      "id": "icon-christ", "slug": "icon-of-christ-pantocrator", "type": "icon", "category": "icons",
+      "title": { "en": "Icon of Christ the Pantocrator (Sample Listing)", "ru": "Икона Господа Вседержителя (образец)", "el": "Εικόνα του Χριστού Παντοκράτορα (δείγμα)" },
+      "authors": [], "translators": [], "publisher": null,
+      "isbn": null, "pages": null, "binding": null, "languages": [], "dimensions": "8 × 10 in",
+      "tradition": "pan-orthodox", "saints": [], "seasons": ["pascha"], "flags": [],
+      "releaseDate": "2025-08-15", "availability": "in_stock",
+      "formats": [ { "id": "s", "format": "item", "price": 40, "label": { "en": "8 × 10 in", "ru": "20 × 25 см", "el": "20 × 25 εκ." } } ],
+      "art": { "kind": "icon", "subject": "christ" },
+      "description": {
+        "en": "Placeholder artwork with the inscription IC XC. Replace with a photograph of the icon you carry.",
+        "ru": "Изображение-заглушка с надписью IC XC. Замените фотографией иконы.",
+        "el": "Ενδεικτική απεικόνιση με την επιγραφή IC XC. Αντικαταστήστε με φωτογραφία της εικόνας."
+      }
+    },
+    {
+      "id": "icon-nicholas", "slug": "icon-of-st-nicholas", "type": "icon", "category": "icons",
+      "title": { "en": "Icon of St. Nicholas (Sample Listing)", "ru": "Икона свт. Николая Чудотворца (образец)", "el": "Εικόνα του Αγίου Νικολάου (δείγμα)" },
+      "authors": [], "translators": [], "publisher": null,
+      "isbn": null, "pages": null, "binding": null, "languages": [], "dimensions": "6 × 8 in",
+      "tradition": "pan-orthodox", "saints": ["nicholas"], "seasons": ["nativity-fast"], "flags": ["staff-pick"],
+      "releaseDate": "2025-12-06", "availability": "low_stock",
+      "formats": [ { "id": "s", "format": "item", "price": 30, "label": { "en": "6 × 8 in", "ru": "15 × 20 см", "el": "15 × 20 εκ." } } ],
+      "art": { "kind": "icon", "subject": "nicholas" },
+      "staffNote": {
+        "en": "A good first icon for a child's room, and a name day gift for every Nicholas you know.",
+        "ru": "Хорошая первая икона для детской и подарок на именины всем Николаям.",
+        "el": "Καλή πρώτη εικόνα για παιδικό δωμάτιο και δώρο για κάθε Νικόλα που γιορτάζει."
+      },
+      "description": {
+        "en": "Placeholder artwork. Replace with a photograph of the icon you carry.",
+        "ru": "Изображение-заглушка. Замените фотографией иконы.",
+        "el": "Ενδεικτική απεικόνιση. Αντικαταστήστε με φωτογραφία της εικόνας."
+      }
+    },
+    {
+      "id": "rope-33", "slug": "wool-prayer-rope-33-knots", "type": "prayer-rope", "category": "prayer-ropes",
+      "title": { "en": "Wool Prayer Rope, 33 Knots (Sample)", "ru": "Чётки шерстяные, 33 узла (образец)", "el": "Μάλλινο κομποσχοίνι, 33 κόμποι (δείγμα)" },
+      "authors": [], "translators": [], "publisher": null,
+      "isbn": null, "pages": null, "binding": null, "languages": [], "dimensions": null,
+      "tradition": "greek-athonite", "saints": [], "seasons": ["great-lent"], "flags": [],
+      "releaseDate": "2025-01-01", "availability": "in_stock",
+      "formats": [ { "id": "blk", "format": "item", "price": 10, "label": { "en": "Black", "ru": "Чёрные", "el": "Μαύρο" } }, { "id": "red", "format": "item", "price": 10, "label": { "en": "Oxblood", "ru": "Бордовые", "el": "Μπορντό" } } ],
+      "art": { "kind": "prayer-rope", "knots": 33 },
+      "specs": [
+        { "label": { "en": "Knots", "ru": "Узлов", "el": "Κόμποι" }, "value": "33" },
+        { "label": { "en": "Material", "ru": "Материал", "el": "Υλικό" }, "value": { "en": "Wool (sample)", "ru": "Шерсть (условно)", "el": "Μαλλί (ενδεικτικά)" } }
+      ],
+      "description": {
+        "en": "A small prayer rope for the wrist or pocket. Sample listing.",
+        "ru": "Небольшие чётки на руку или в карман. Образец карточки.",
+        "el": "Μικρό κομποσχοίνι για τον καρπό ή την τσέπη. Ενδεικτική καταχώριση."
+      }
+    },
+    {
+      "id": "rope-100", "slug": "wool-prayer-rope-100-knots", "type": "prayer-rope", "category": "prayer-ropes",
+      "title": { "en": "Wool Prayer Rope, 100 Knots (Sample)", "ru": "Чётки шерстяные, 100 узлов (образец)", "el": "Μάλλινο κομποσχοίνι, 100 κόμποι (δείγμα)" },
+      "authors": [], "translators": [], "publisher": null,
+      "isbn": null, "pages": null, "binding": null, "languages": [], "dimensions": null,
+      "tradition": "greek-athonite", "saints": [], "seasons": ["great-lent"], "flags": ["staff-pick"],
+      "releaseDate": "2025-01-01", "availability": "low_stock",
+      "formats": [ { "id": "blk", "format": "item", "price": 20, "label": { "en": "Black", "ru": "Чёрные", "el": "Μαύρο" } } ],
+      "art": { "kind": "prayer-rope", "knots": 100 },
+      "staffNote": {
+        "en": "Tied by hand with a bead every twenty-five knots. Ask us how to care for it.",
+        "ru": "Сплетены вручную, бусина через каждые двадцать пять узлов. Спросите нас, как за ними ухаживать.",
+        "el": "Πλεγμένο στο χέρι, με χάντρα κάθε είκοσι πέντε κόμπους. Ρωτήστε μας πώς να το φροντίζετε."
+      },
+      "specs": [
+        { "label": { "en": "Knots", "ru": "Узлов", "el": "Κόμποι" }, "value": "100" },
+        { "label": { "en": "Material", "ru": "Материал", "el": "Υλικό" }, "value": { "en": "Wool (sample)", "ru": "Шерсть (условно)", "el": "Μαλλί (ενδεικτικά)" } }
+      ],
+      "description": {
+        "en": "A full prayer rope with a knotted cross and tassel. Sample listing.",
+        "ru": "Полные чётки с плетёным крестом и кистью. Образец карточки.",
+        "el": "Πλήρες κομποσχοίνι με πλεχτό σταυρό και φούντα. Ενδεικτική καταχώριση."
+      }
+    },
+    {
+      "id": "pendant-cross", "slug": "eight-pointed-pendant-cross", "type": "cross", "category": "crosses",
+      "title": { "en": "Eight-Pointed Pendant Cross, Bronze (Sample)", "ru": "Нательный восьмиконечный крест, бронза (образец)", "el": "Οκτάκτινος σταυρός λαιμού, μπρούντζινος (δείγμα)" },
+      "authors": [], "translators": [], "publisher": null,
+      "isbn": null, "pages": null, "binding": null, "languages": [], "dimensions": "1 × 1.6 in",
+      "tradition": "russian", "saints": [], "seasons": ["pascha"], "flags": [],
+      "releaseDate": "2025-01-01", "availability": "in_stock",
+      "formats": [ { "id": "std", "format": "item", "price": 20 } ],
+      "art": { "kind": "cross", "variant": "slavic" },
+      "description": {
+        "en": "A baptismal or everyday cross with the slanted footrest. Sample listing.",
+        "ru": "Крестильный или повседневный крест с косой перекладиной. Образец карточки.",
+        "el": "Βαπτιστικός ή καθημερινός σταυρός με λοξό υποπόδιο. Ενδεικτική καταχώριση."
+      }
+    },
+    {
+      "id": "wall-cross", "slug": "byzantine-wall-cross", "type": "cross", "category": "crosses",
+      "title": { "en": "Byzantine Wall Cross, Carved Wood (Sample)", "ru": "Византийский настенный крест, резьба по дереву (образец)", "el": "Βυζαντινός σταυρός τοίχου, ξυλόγλυπτος (δείγμα)" },
+      "authors": [], "translators": [], "publisher": null,
+      "isbn": null, "pages": null, "binding": null, "languages": [], "dimensions": "6 × 6 in",
+      "tradition": "greek-athonite", "saints": [], "seasons": [], "flags": [],
+      "releaseDate": "2025-01-01", "availability": "in_stock",
+      "formats": [ { "id": "std", "format": "item", "price": 40 } ],
+      "art": { "kind": "cross", "variant": "icxc-nika" },
+      "description": {
+        "en": "A carved Byzantine cross with IC XC NIKA in the four quarters. Sample listing.",
+        "ru": "Резной византийский крест с надписью IC XC NIKA. Образец карточки.",
+        "el": "Ξυλόγλυπτος βυζαντινός σταυρός με το IC XC NIKA στα τέσσερα τεταρτημόρια. Ενδεικτική καταχώριση."
+      }
+    },
+    {
+      "id": "incense-rose", "slug": "monastery-incense-rose", "type": "incense", "category": "incense-candles",
+      "title": { "en": "Monastery Incense, Rose (Sample)", "ru": "Монастырский ладан «Роза» (образец)", "el": "Μοναστηριακό λιβάνι, τριαντάφυλλο (δείγμα)" },
+      "authors": [], "translators": [], "publisher": null,
+      "isbn": null, "pages": null, "binding": null, "languages": [], "dimensions": null,
+      "tradition": "greek-athonite", "saints": [], "seasons": [], "flags": [],
+      "releaseDate": "2025-01-01", "availability": "in_stock",
+      "formats": [ { "id": "50", "format": "item", "price": 10, "label": { "en": "Small tin", "ru": "Малая банка", "el": "Μικρό κουτί" } }, { "id": "250", "format": "item", "price": 30, "label": { "en": "Large tin", "ru": "Большая банка", "el": "Μεγάλο κουτί" } } ],
+      "art": { "kind": "incense" },
+      "description": {
+        "en": "Resin incense for the home censer. Sample listing.",
+        "ru": "Ладан для домашней кадильницы. Образец карточки.",
+        "el": "Λιβάνι για το θυμιατό του σπιτιού. Ενδεικτική καταχώριση."
+      }
+    },
+    {
+      "id": "beeswax-tapers", "slug": "beeswax-taper-candles", "type": "candle", "category": "incense-candles",
+      "title": { "en": "Beeswax Taper Candles, Bundle (Sample)", "ru": "Восковые свечи, связка (образец)", "el": "Κεριά από μελισσοκέρι, δέσμη (δείγμα)" },
+      "authors": [], "translators": [], "publisher": null,
+      "isbn": null, "pages": null, "binding": null, "languages": [], "dimensions": null,
+      "tradition": "pan-orthodox", "saints": [], "seasons": ["nativity-fast", "pascha"], "flags": [],
+      "releaseDate": "2025-01-01", "availability": "in_stock",
+      "formats": [ { "id": "std", "format": "item", "price": 10 } ],
+      "art": { "kind": "candles" },
+      "description": {
+        "en": "Pure beeswax tapers for the icon corner. Sample listing.",
+        "ru": "Свечи из чистого воска для домашнего иконостаса. Образец карточки.",
+        "el": "Κεριά από καθαρό μελισσοκέρι για το εικονοστάσι. Ενδεικτική καταχώριση."
+      }
+    },
+    {
+      "id": "baptism-set", "slug": "baptism-gift-set", "type": "gift", "category": "gifts",
+      "title": { "en": "Baptism Gift Set (Sample)", "ru": "Подарочный набор к крещению (образец)", "el": "Σετ δώρου βάπτισης (δείγμα)" },
+      "authors": [], "translators": [], "publisher": null,
+      "isbn": null, "pages": null, "binding": null, "languages": [], "dimensions": null,
+      "tradition": "pan-orthodox", "saints": [], "seasons": ["pascha"], "flags": [],
+      "releaseDate": "2025-01-01", "availability": "in_stock",
+      "formats": [ { "id": "std", "format": "item", "price": 60 } ],
+      "art": { "kind": "gift" },
+      "description": {
+        "en": "A cross, a small icon and a prayer book in a cloth box. Sample listing.",
+        "ru": "Крестик, маленькая икона и молитвослов в тканевой коробке. Образец карточки.",
+        "el": "Σταυρός, μικρή εικόνα και προσευχητάριο σε υφασμάτινο κουτί. Ενδεικτική καταχώριση."
+      }
+    },
+    {
+      "id": "bookmarks", "slug": "cloth-bookmark-set", "type": "gift", "category": "gifts",
+      "title": { "en": "Cloth Bookmark Set (Sample)", "ru": "Набор тканевых закладок (образец)", "el": "Σετ υφασμάτινων σελιδοδεικτών (δείγμα)" },
+      "authors": [], "translators": [], "publisher": null,
+      "isbn": null, "pages": null, "binding": null, "languages": [], "dimensions": null,
+      "tradition": "pan-orthodox", "saints": [], "seasons": ["nativity-fast"], "flags": ["new"],
+      "releaseDate": "2026-11-05", "availability": "in_stock",
+      "formats": [ { "id": "std", "format": "item", "price": 10 } ],
+      "art": { "kind": "bookmarks" },
+      "description": {
+        "en": "Three woven ribbons in the colors of the Church year. Sample listing.",
+        "ru": "Три тканые ленты в цветах церковного года. Образец карточки.",
+        "el": "Τρεις υφαντές κορδέλες στα χρώματα του εκκλησιαστικού έτους. Ενδεικτική καταχώριση."
+      }
+    },
+    {
+      "id": "gift-card", "slug": "gift-card", "type": "gift-card", "category": "gift-cards",
+      "title": { "en": "Bookstore Gift Card (Sample)", "ru": "Подарочная карта лавки (образец)", "el": "Δωροκάρτα βιβλιοπωλείου (δείγμα)" },
+      "authors": [], "translators": [], "publisher": null,
+      "isbn": null, "pages": null, "binding": null, "languages": [], "dimensions": null,
+      "tradition": "pan-orthodox", "saints": [], "seasons": ["nativity-fast"], "flags": [],
+      "releaseDate": "2025-01-01", "availability": "in_stock",
+      "formats": [
+        { "id": "25", "format": "gift-card", "price": 25, "label": "25" },
+        { "id": "50", "format": "gift-card", "price": 50, "label": "50" },
+        { "id": "100", "format": "gift-card", "price": 100, "label": "100" }
+      ],
+      "art": { "kind": "gift-card" },
+      "description": {
+        "en": "Sent by email or printed in the store. Sample listing; connect a gift card service before going live.",
+        "ru": "Отправляется по электронной почте или печатается в лавке. Образец; подключите сервис подарочных карт перед запуском.",
+        "el": "Αποστέλλεται με email ή τυπώνεται στο κατάστημα. Ενδεικτική καταχώριση· συνδέστε υπηρεσία δωροκαρτών πριν τη λειτουργία."
+      }
+    }
+  ]
+}

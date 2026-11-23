@@ -1,0 +1,102 @@
+{
+  "$schema": "../schemas/site.schema.json",
+  "slug": "orthodox-bookstore-template",
+  "brand": {
+    "name": {
+      "en": "St. Example Orthodox Bookstore",
+      "ru": "Православная книжная лавка св. Примера",
+      "el": "Ορθόδοξο Βιβλιοπωλείο Αγίου Παραδείγματος"
+    },
+    "shortName": {
+      "en": "St. Example Books",
+      "ru": "Лавка св. Примера",
+      "el": "Βιβλιοπωλείο Αγ. Παραδείγματος"
+    },
+    "tagline": {
+      "en": "Books, icons and prayer ropes for the life of the Church",
+      "ru": "Книги, иконы и чётки для церковной жизни",
+      "el": "Βιβλία, εικόνες και κομποσχοίνια για τη ζωή της Εκκλησίας"
+    },
+    "sampleNotice": {
+      "en": "Sample store. Titles, prices and ISBNs are placeholders.",
+      "ru": "Образец магазина. Названия, цены и ISBN условные.",
+      "el": "Δείγμα καταστήματος. Τίτλοι, τιμές και ISBN είναι ενδεικτικά."
+    }
+  },
+  "logo": {
+    "style": "wordmark",
+    "mark": "slavic-cross",
+    "image": "/brand/logo-square.svg",
+    "alt": {
+      "en": "St. Example Orthodox Bookstore",
+      "ru": "Православная книжная лавка св. Примера",
+      "el": "Ορθόδοξο Βιβλιοπωλείο Αγίου Παραδείγματος"
+    }
+  },
+  "languages": [
+    { "code": "en", "label": "English", "nativeLabel": "English", "dir": "ltr", "locale": "en-US", "displayFont": "default" },
+    { "code": "ru", "label": "Russian", "nativeLabel": "Русский", "dir": "ltr", "locale": "ru-RU", "displayFont": "slavonic" },
+    { "code": "el", "label": "Greek", "nativeLabel": "Ελληνικά", "dir": "ltr", "locale": "el-GR", "displayFont": "greek" }
+  ],
+  "defaultLanguage": "en",
+  "contact": {
+    "email": "hello@stexample-books.example",
+    "phone": "(555) 010-0100",
+    "address": {
+      "line1": "100 Example Street",
+      "line2": { "en": "Parish hall, lower level", "ru": "Приходской дом, цокольный этаж", "el": "Πνευματικό κέντρο, ισόγειο" },
+      "city": "Sampleton",
+      "region": "ST",
+      "postalCode": "00000",
+      "country": { "en": "United States", "ru": "США", "el": "ΗΠΑ" }
+    }
+  },
+  "hours": [
+    { "days": { "en": "Monday", "ru": "Понедельник", "el": "Δευτέρα" }, "time": { "en": "Closed", "ru": "Выходной", "el": "Κλειστά" } },
+    { "days": { "en": "Tuesday to Friday", "ru": "Вторник – пятница", "el": "Τρίτη έως Παρασκευή" }, "time": "10:00 – 18:00" },
+    { "days": { "en": "Saturday", "ru": "Суббота", "el": "Σάββατο" }, "time": { "en": "10:00 – 16:00, closed during Vespers", "ru": "10:00 – 16:00, закрыто во время всенощной", "el": "10:00 – 16:00, κλειστά κατά τον Εσπερινό" } },
+    { "days": { "en": "Sunday", "ru": "Воскресенье", "el": "Κυριακή" }, "time": { "en": "After the Divine Liturgy until 14:00", "ru": "После Божественной литургии до 14:00", "el": "Μετά τη Θεία Λειτουργία έως τις 14:00" } }
+  ],
+  "hoursNote": {
+    "en": "Hours change on great feasts and during Holy Week. Sample hours.",
+    "ru": "В великие праздники и на Страстной седмице часы работы меняются. Часы условные.",
+    "el": "Το ωράριο αλλάζει στις μεγάλες εορτές και τη Μεγάλη Εβδομάδα. Ενδεικτικό ωράριο."
+  },
+  "map": {
+    "embedUrl": null,
+    "directionsUrl": "https://www.openstreetmap.org/search?query=100%20Example%20Street%20Sampleton"
+  },
+  "commerce": {
+    "currency": "USD",
+    "provider": "none",
+    "checkoutEndpoint": null,
+    "shipping": { "flatRate": 10, "freeOver": 100, "giftWrap": 5 },
+    "pickup": { "enabled": true },
+    "parishBulk": { "enabled": true, "minQuantity": 10 }
+  },
+  "orthodoxConnect": {
+    "enabled": true,
+    "appUrl": "https://app.orthodoxconnect.example",
+    "organizationId": "TODO-org-id",
+    "newsletter": { "enabled": true, "endpoint": null },
+    "eventsRsvp": { "enabled": true }
+  },
+  "forms": {
+    "endpoint": null
+  },
+  "seasons": {
+    "active": "auto",
+    "fallback": "nativity-fast",
+    "calendar": [
+      { "season": "nativity-fast", "start": "2026-11-15", "end": "2026-12-24" },
+      { "season": "great-lent", "start": "2027-03-15", "end": "2027-05-01" },
+      { "season": "pascha", "start": "2027-05-02", "end": "2027-06-10" },
+      { "season": "nativity-fast", "start": "2027-11-15", "end": "2027-12-24" }
+    ]
+  },
+  "routes": {
+    "category": "catalog",
+    "product": "product",
+    "post": "journal"
+  }
+}

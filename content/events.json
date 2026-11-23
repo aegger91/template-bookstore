@@ -1,0 +1,70 @@
+{
+  "$schema": "../schemas/events.schema.json",
+  "events": [
+    {
+      "id": "signing-jesus-prayer", "orthodoxConnectId": "TODO-event-1", "kind": "signing",
+      "start": "2026-12-05T14:00", "end": "2026-12-05T16:00",
+      "title": { "en": "Book signing: A Short Guide to the Jesus Prayer", "ru": "Автограф-сессия: «Краткое руководство к Иисусовой молитве»", "el": "Υπογραφή βιβλίου: «Σύντομος οδηγός για την ευχή του Ιησού»" },
+      "speaker": { "en": "A. Sample Author", "ru": "А. Образцов", "el": "Α. Δειγματόπουλος" },
+      "place": { "en": "In the bookstore", "ru": "В лавке", "el": "Στο βιβλιοπωλείο" },
+      "summary": {
+        "en": "Meet the author of our sample new release, hear a short reading and have your copy signed. Tea and Lenten cookies after.",
+        "ru": "Встреча с автором условной новинки, короткое чтение и подписание книг. После встречи чай и постное печенье.",
+        "el": "Γνωρίστε τον συγγραφέα της ενδεικτικής νέας έκδοσης, ακούστε μια σύντομη ανάγνωση και υπογράψτε το αντίτυπό σας. Τσάι και νηστίσιμα κουλουράκια μετά."
+      },
+      "product": "jesus-prayer-guide"
+    },
+    {
+      "id": "story-hour-nicholas", "orthodoxConnectId": "TODO-event-2", "kind": "children",
+      "start": "2026-12-12T10:30", "end": "2026-12-12T11:30",
+      "title": { "en": "Children's story hour: St. Nicholas", "ru": "Детский час: святитель Николай", "el": "Ώρα παραμυθιού: ο Άγιος Νικόλαος" },
+      "speaker": { "en": "Sample Sunday school teacher", "ru": "Условный учитель воскресной школы", "el": "Ενδεικτικός κατηχητής" },
+      "place": { "en": "Reading corner", "ru": "Уголок для чтения", "el": "Γωνιά ανάγνωσης" },
+      "summary": {
+        "en": "A reading of a St. Nicholas story for ages four to eight, with a simple craft. Parents stay with their children.",
+        "ru": "Чтение рассказа о святителе Николае для детей от четырёх до восьми лет и простая поделка. Родители остаются с детьми.",
+        "el": "Ανάγνωση ιστορίας για τον Άγιο Νικόλαο για παιδιά 4 έως 8 ετών, με απλή χειροτεχνία. Οι γονείς μένουν με τα παιδιά."
+      },
+      "product": "nicholas-story"
+    },
+    {
+      "id": "talk-incarnation", "orthodoxConnectId": "TODO-event-3", "kind": "talk",
+      "start": "2026-12-17T19:00", "end": "2026-12-17T20:30",
+      "title": { "en": "Talk: Reading St. Athanasius before Nativity", "ru": "Беседа: читаем свт. Афанасия перед Рождеством", "el": "Ομιλία: διαβάζοντας τον Μέγα Αθανάσιο πριν τα Χριστούγεννα" },
+      "speaker": { "en": "Sample speaker, parish reader", "ru": "Условный докладчик, чтец прихода", "el": "Ενδεικτικός ομιλητής, αναγνώστης της ενορίας" },
+      "place": { "en": "Parish hall", "ru": "Приходской дом", "el": "Αίθουσα ενορίας" },
+      "summary": {
+        "en": "An evening on On the Incarnation: why it was written and how to read it slowly. Bring your copy or borrow one at the door.",
+        "ru": "Вечер о книге «О воплощении»: зачем она написана и как читать её не спеша. Возьмите свой экземпляр или одолжите у входа.",
+        "el": "Μια βραδιά για το «Περί της ενανθρωπήσεως»: γιατί γράφτηκε και πώς να το διαβάσουμε αργά. Φέρτε το αντίτυπό σας ή δανειστείτε ένα στην είσοδο."
+      },
+      "product": "incarnation"
+    },
+    {
+      "id": "reading-group-ladder", "orthodoxConnectId": "TODO-event-4", "kind": "reading-group",
+      "start": "2027-01-21T19:00", "end": "2027-01-21T20:00",
+      "title": { "en": "Reading group: The Ladder, first meeting", "ru": "Кружок чтения: Лествица, первая встреча", "el": "Ομάδα ανάγνωσης: η Κλίμαξ, πρώτη συνάντηση" },
+      "speaker": { "en": "Led by bookstore staff", "ru": "Ведут сотрудники лавки", "el": "Με το προσωπικό του βιβλιοπωλείου" },
+      "place": { "en": "In the bookstore", "ru": "В лавке", "el": "Στο βιβλιοπωλείο" },
+      "summary": {
+        "en": "A monthly group reading toward Great Lent. We read two steps before each meeting.",
+        "ru": "Ежемесячные встречи в преддверии Великого поста. К каждой встрече читаем два слова.",
+        "el": "Μηνιαία ομάδα με ορίζοντα τη Μεγάλη Σαρακοστή. Διαβάζουμε δύο λόγους πριν από κάθε συνάντηση."
+      },
+      "product": "ladder"
+    },
+    {
+      "id": "icon-care", "orthodoxConnectId": "TODO-event-5", "kind": "talk",
+      "start": "2026-11-08T15:00", "end": "2026-11-08T16:00",
+      "title": { "en": "Caring for icons at home", "ru": "Как ухаживать за иконами дома", "el": "Η φροντίδα των εικόνων στο σπίτι" },
+      "speaker": { "en": "Sample iconographer", "ru": "Условный иконописец", "el": "Ενδεικτικός αγιογράφος" },
+      "place": { "en": "Parish hall", "ru": "Приходской дом", "el": "Αίθουσα ενορίας" },
+      "summary": {
+        "en": "Light, candles, dust and what not to do. A past event, kept here to show the archive.",
+        "ru": "Свет, свечи, пыль и чего делать не стоит. Прошедшее событие, оставлено для примера архива.",
+        "el": "Φως, κεριά, σκόνη και τι να αποφεύγουμε. Παλαιότερη εκδήλωση, για να φαίνεται το αρχείο."
+      },
+      "product": null
+    }
+  ]
+}

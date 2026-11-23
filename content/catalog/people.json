@@ -1,0 +1,117 @@
+{
+  "$schema": "../../schemas/people.schema.json",
+  "publishers": [
+    {
+      "id": "sample-monastery-press",
+      "name": { "en": "Sample Monastery Press", "ru": "Издательство Образцового монастыря", "el": "Εκδόσεις Μονής Δείγματος" },
+      "place": { "en": "Placeholder Valley", "ru": "Условная долина", "el": "Ενδεικτική Κοιλάδα" },
+      "about": {
+        "en": "A sample monastery imprint used to show how a publisher profile looks. Replace with a real publisher you carry.",
+        "ru": "Условное монастырское издательство, чтобы показать страницу издателя. Замените на настоящего.",
+        "el": "Ενδεικτικές μοναστηριακές εκδόσεις για να φανεί η σελίδα εκδότη. Αντικαταστήστε με πραγματικό εκδότη."
+      }
+    },
+    {
+      "id": "example-orthodox-publishing",
+      "name": { "en": "Example Orthodox Publishing", "ru": "Православное издательство «Пример»", "el": "Ορθόδοξες Εκδόσεις Παράδειγμα" },
+      "place": { "en": "Sampleton", "ru": "Сэмплтон", "el": "Σάμπλτον" },
+      "about": {
+        "en": "A placeholder small press for translations of the Fathers and books for parish life.",
+        "ru": "Условное малое издательство переводов святых отцов и книг для приходской жизни.",
+        "el": "Ενδεικτικός μικρός εκδοτικός οίκος για μεταφράσεις Πατέρων και βιβλία ενοριακής ζωής."
+      }
+    },
+    {
+      "id": "placeholder-skete-books",
+      "name": { "en": "Placeholder Skete Books", "ru": "Книги Условного скита", "el": "Βιβλία Ενδεικτικής Σκήτης" },
+      "place": { "en": "Example Hills", "ru": "Примерные холмы", "el": "Λόφοι Παραδείγματος" },
+      "about": {
+        "en": "A sample skete imprint for chant recordings and service books.",
+        "ru": "Условное издательство скита: записи пения и богослужебные книги.",
+        "el": "Ενδεικτικές εκδόσεις σκήτης για ηχογραφήσεις ψαλμωδίας και λειτουργικά βιβλία."
+      }
+    },
+    {
+      "id": "st-example-editions",
+      "name": { "en": "St. Example Editions", "ru": "Издания лавки св. Примера", "el": "Εκδόσεις Αγίου Παραδείγματος" },
+      "place": { "en": "Our own imprint", "ru": "Собственное издательство", "el": "Δικές μας εκδόσεις" },
+      "about": {
+        "en": "The bookstore's own sample imprint for small parish booklets and children's titles.",
+        "ru": "Условное издательство самой лавки: приходские брошюры и детские книги.",
+        "el": "Οι ενδεικτικές εκδόσεις του βιβλιοπωλείου για ενοριακά φυλλάδια και παιδικά βιβλία."
+      }
+    }
+  ],
+  "people": [
+    {
+      "id": "john-climacus", "kind": "father",
+      "name": { "en": "St. John Climacus", "ru": "Прп. Иоанн Лествичник", "el": "Άγιος Ιωάννης της Κλίμακος" },
+      "note": { "en": "Abbot of Sinai, 7th century.", "ru": "Игумен Синайский, VII век.", "el": "Ηγούμενος του Σινά, 7ος αιώνας." }
+    },
+    {
+      "id": "athanasius", "kind": "father",
+      "name": { "en": "St. Athanasius the Great", "ru": "Свт. Афанасий Великий", "el": "Μέγας Αθανάσιος" },
+      "note": { "en": "Archbishop of Alexandria, 4th century.", "ru": "Архиепископ Александрийский, IV век.", "el": "Αρχιεπίσκοπος Αλεξανδρείας, 4ος αιώνας." }
+    },
+    {
+      "id": "john-chrysostom", "kind": "father",
+      "name": { "en": "St. John Chrysostom", "ru": "Свт. Иоанн Златоуст", "el": "Άγιος Ιωάννης ο Χρυσόστομος" },
+      "note": { "en": "Archbishop of Constantinople, 4th to 5th century.", "ru": "Архиепископ Константинопольский, IV–V века.", "el": "Αρχιεπίσκοπος Κωνσταντινουπόλεως, 4ος–5ος αιώνας." }
+    },
+    {
+      "id": "basil-the-great", "kind": "father",
+      "name": { "en": "St. Basil the Great", "ru": "Свт. Василий Великий", "el": "Μέγας Βασίλειος" },
+      "note": { "en": "Archbishop of Caesarea, 4th century.", "ru": "Архиепископ Кесарийский, IV век.", "el": "Αρχιεπίσκοπος Καισαρείας, 4ος αιώνας." }
+    },
+    {
+      "id": "john-of-damascus", "kind": "father",
+      "name": { "en": "St. John of Damascus", "ru": "Прп. Иоанн Дамаскин", "el": "Άγιος Ιωάννης ο Δαμασκηνός" },
+      "note": { "en": "Monk and hymnographer, 8th century.", "ru": "Монах и песнописец, VIII век.", "el": "Μοναχός και υμνογράφος, 8ος αιώνας." }
+    },
+    {
+      "id": "nicodemus-macarius", "kind": "father",
+      "name": { "en": "Sts. Nicodemus the Hagiorite and Macarius of Corinth (compilers)", "ru": "Прп. Никодим Святогорец и свт. Макарий Коринфский (составители)", "el": "Άγιοι Νικόδημος ο Αγιορείτης και Μακάριος Κορίνθου (συλλογή)" },
+      "note": { "en": "Compiled the Philokalia, 18th century.", "ru": "Составили «Добротолюбие», XVIII век.", "el": "Συνέταξαν τη Φιλοκαλία, 18ος αιώνας." }
+    },
+    {
+      "id": "nicodemus", "kind": "father",
+      "name": { "en": "St. Nicodemus the Hagiorite", "ru": "Прп. Никодим Святогорец", "el": "Άγιος Νικόδημος ο Αγιορείτης" },
+      "note": { "en": "Monk of Mount Athos, 18th century.", "ru": "Святогорский монах, XVIII век.", "el": "Αγιορείτης μοναχός, 18ος αιώνας." }
+    },
+    {
+      "id": "john-moschos", "kind": "father",
+      "name": { "en": "John Moschos", "ru": "Блж. Иоанн Мосх", "el": "Ιωάννης Μόσχος" },
+      "note": { "en": "Monk and traveler, 6th to 7th century.", "ru": "Монах и странник, VI–VII века.", "el": "Μοναχός και οδοιπόρος, 6ος–7ος αιώνας." }
+    },
+    {
+      "id": "sophronius", "kind": "father",
+      "name": { "en": "St. Sophronius of Jerusalem", "ru": "Свт. Софроний Иерусалимский", "el": "Άγιος Σωφρόνιος Ιεροσολύμων" },
+      "note": { "en": "Patriarch of Jerusalem, 7th century.", "ru": "Патриарх Иерусалимский, VII век.", "el": "Πατριάρχης Ιεροσολύμων, 7ος αιώνας." }
+    },
+    {
+      "id": "anonymous-pilgrim", "kind": "father",
+      "name": { "en": "Anonymous", "ru": "Неизвестный автор", "el": "Ανώνυμος" },
+      "note": { "en": "Russian pilgrim, 19th century.", "ru": "Русский странник, XIX век.", "el": "Ρώσος προσκυνητής, 19ος αιώνας." }
+    },
+    {
+      "id": "sample-author", "kind": "sample",
+      "name": { "en": "A. Sample Author", "ru": "А. Образцов", "el": "Α. Δειγματόπουλος" },
+      "note": { "en": "Sample author profile. Replace with a real biography.", "ru": "Условный профиль автора. Замените настоящей биографией.", "el": "Ενδεικτικό προφίλ συγγραφέα. Αντικαταστήστε με πραγματικό βιογραφικό." }
+    },
+    {
+      "id": "example-writer", "kind": "sample",
+      "name": { "en": "B. Example Writer", "ru": "Б. Примеров", "el": "Β. Παραδειγματίδης" },
+      "note": { "en": "Sample author of children's books.", "ru": "Условный автор детских книг.", "el": "Ενδεικτικός συγγραφέας παιδικών βιβλίων." }
+    },
+    {
+      "id": "sample-translator", "kind": "sample",
+      "name": { "en": "C. Sample Translator", "ru": "В. Переводчиков", "el": "Γ. Μεταφραστάκης" },
+      "note": { "en": "Sample translator profile.", "ru": "Условный профиль переводчика.", "el": "Ενδεικτικό προφίλ μεταφραστή." }
+    },
+    {
+      "id": "placeholder-choir", "kind": "sample",
+      "name": { "en": "Placeholder Skete Choir", "ru": "Хор Условного скита", "el": "Χορός Ενδεικτικής Σκήτης" },
+      "note": { "en": "Sample choir for chant recordings.", "ru": "Условный хор для записей пения.", "el": "Ενδεικτικός χορός για ηχογραφήσεις." }
+    }
+  ]
+}
