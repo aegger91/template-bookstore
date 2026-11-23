@@ -62,6 +62,12 @@
             },
             "additionalProperties": false
           },
+          "photos": {
+            "type": "object",
+            "description": "Real photos under public/, for example /products/ladder-front.jpg. A photo replaces the drawn placeholder for that view. Never mirror icon photos.",
+            "properties": { "front": { "type": "string" }, "back": { "type": "string" }, "spine": { "type": "string" } },
+            "additionalProperties": false
+          },
           "staffNote": { "$ref": "common.schema.json#/definitions/localized" },
           "description": { "$ref": "common.schema.json#/definitions/localized" },
           "toc": { "type": "array", "items": { "$ref": "common.schema.json#/definitions/localized" } },

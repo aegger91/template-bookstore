@@ -127,6 +127,7 @@ export interface Product {
   availability: Availability;
   formats: ProductFormat[];
   art: ProductArt;
+  photos?: { front?: string; back?: string; spine?: string };
   staffNote?: Localized;
   description: Localized;
   toc?: Localized[];

@@ -390,6 +390,15 @@ export function ProductArt({
   className?: string;
 }) {
   const { kind } = product.art;
+  const photo = product.photos?.[view];
+  if (photo) {
+    return (
+      <div className={cn("relative grid size-full place-items-center", className)}>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src={photo} alt={tr(product.title, lang)} loading="lazy" className="max-h-full max-w-full object-contain shadow-book" />
+      </div>
+    );
+  }
   return (
     <div className={cn("relative grid size-full place-items-center", className)}>
       {kind === "book" && <BookCover product={product} lang={lang} view={view} />}
