@@ -129,10 +129,12 @@ export function Header() {
   const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const headerRef = useRef<HTMLElement>(null);
 
-  useEffect(() => {
+  const [lastPath, setLastPath] = useState(pathname);
+  if (pathname !== lastPath) {
+    setLastPath(pathname);
     setMegaOpen(false);
     setDrawerOpen(false);
-  }, [pathname]);
+  }
 
   useEffect(() => {
     if (!megaOpen) return;
@@ -148,10 +150,14 @@ export function Header() {
     };
   }, [megaOpen]);
 
+  const hoverOpenedAt = useRef(0);
   const openMega = () => {
     if (closeTimer.current) clearTimeout(closeTimer.current);
+    if (!megaOpen) hoverOpenedAt.current = Date.now();
     setMegaOpen(true);
   };
+  // A click that lands right after hover opened the menu should not close it again.
+  const toggleMega = () => setMegaOpen((o) => (o && Date.now() - hoverOpenedAt.current < 400 ? true : !o));
   const scheduleClose = () => {
     closeTimer.current = setTimeout(() => setMegaOpen(false), 160);
   };
@@ -288,7 +294,7 @@ export function Header() {
                       )}
                       aria-expanded={megaOpen}
                       aria-haspopup="true"
-                      onClick={() => setMegaOpen((o) => !o)}
+                      onClick={toggleMega}
                     >
                       {tr(n.label, lang)}
                       <ChevronDown className={cn("size-4 transition-transform", megaOpen && "rotate-180")} />

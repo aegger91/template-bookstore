@@ -47,10 +47,15 @@ const { pages, templates } = data["content/pages.json"];
 const tokens = data["design/tokens.json"];
 
 const ids = (list, key = "id") => new Set(list.map((x) => x[key]));
-const has = (set, id, where) => set.has(id) || errors.push(`${where}: unknown id "${id}"`);
+const has = (set, id, where) => {
+  if (!set.has(id)) errors.push(`${where}: unknown id "${id}"`);
+};
 const unique = (list, key, where) => {
   const seen = new Set();
-  for (const x of list) seen.has(x[key]) ? errors.push(`${where}: duplicate ${key} "${x[key]}"`) : seen.add(x[key]);
+  for (const x of list) {
+    if (seen.has(x[key])) errors.push(`${where}: duplicate ${key} "${x[key]}"`);
+    seen.add(x[key]);
+  }
 };
 
 const langCodes = site.languages.map((l) => l.code);

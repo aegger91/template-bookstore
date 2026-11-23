@@ -191,7 +191,7 @@ export function AccountSection() {
           <span className="rounded-sm bg-parchment px-2 py-0.5 font-sans text-[0.72rem] text-ink-soft">{a.placeholder}</span>
         </div>
         <p className="mt-2 text-[0.98rem] text-ink-soft">{a.signInText}</p>
-        <form className="mt-6 space-y-4" onSubmit={(e) => e.preventDefault()} aria-disabled>
+        <form className="mt-6 space-y-4" onSubmit={(e) => e.preventDefault()}>
           <F id="acct-email" type="email" label={dict.common.emailLabel} disabled />
           <F id="acct-password" type="password" label={a.password} disabled />
           <button disabled className="h-11 w-full rounded-md bg-oxblood/50 text-paper">

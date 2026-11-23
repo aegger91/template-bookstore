@@ -112,7 +112,7 @@ export function CheckoutSection() {
               currency: site.commerce.currency,
               language: lang,
             });
-            if (result.kind === "redirect") window.location.href = result.url;
+            if (result.kind === "redirect") window.location.assign(result.url);
             else if (result.kind === "demo") {
               clearCart();
               setStatus({ kind: "done", order: result.orderNumber });

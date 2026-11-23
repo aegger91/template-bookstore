@@ -63,7 +63,7 @@ try {
     }
 
     const d = await open("desktop", `/${code}/`);
-    await d.page.locator("header nav button[aria-haspopup], header nav button[aria-expanded]").first().click();
+    await d.page.locator("header nav[aria-label='Main'] button").first().click();
     await d.page.waitForTimeout(300);
     await d.page.screenshot({ path: join(dest, `${code}-extra-mega-menu-desktop.png`) });
     await d.page.keyboard.press("Escape");

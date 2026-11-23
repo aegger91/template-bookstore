@@ -1,13 +1,15 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useState, useSyncExternalStore } from "react";
 import { ArrowRight } from "lucide-react";
 import { OrthodoxCross } from "@/components/orthodox/orthodox-cross";
 import { ProductCard } from "@/components/shop/product-card";
 import { activeSeasonId, productById } from "@/lib/content";
 import { clothStyle } from "@/lib/tokens";
 import { cn } from "@/lib/utils";
+
+const noop = () => () => {};
 
 interface SeasonData {
   id: string;
@@ -20,16 +22,13 @@ interface SeasonData {
 }
 
 export function FeastTabs({ seasons, initial, nowLabel, shopLabel }: { seasons: SeasonData[]; initial: string; nowLabel: string; shopLabel: string }) {
-  const [current, setCurrent] = useState(initial);
-  const [now, setNow] = useState(initial);
-
-  useEffect(() => {
-    const today = activeSeasonId(new Date());
-    if (today !== initial) {
-      setNow(today);
-      setCurrent(today);
-    }
-  }, [initial]);
+  const now = useSyncExternalStore(
+    noop,
+    () => activeSeasonId(new Date()),
+    () => initial,
+  );
+  const [picked, setPicked] = useState<string | null>(null);
+  const current = picked ?? now;
 
   const s = seasons.find((x) => x.id === current) ?? seasons[0];
   const items = s.productIds.map(productById).filter((p): p is NonNullable<typeof p> => Boolean(p));
@@ -42,7 +41,7 @@ export function FeastTabs({ seasons, initial, nowLabel, shopLabel }: { seasons: 
             key={x.id}
             role="tab"
             aria-selected={x.id === current}
-            onClick={() => setCurrent(x.id)}
+            onClick={() => setPicked(x.id)}
             className={cn(
               "flex shrink-0 items-center gap-2 rounded-full border px-4 py-1.5 text-[1rem] transition-colors",
               x.id === current ? "border-ink bg-ink text-paper" : "border-rule bg-paper text-ink hover:border-ink/50",
