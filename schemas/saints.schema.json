@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "saints.schema.json",
+  "title": "Saints and church seasons",
+  "type": "object",
+  "required": ["saints", "seasons"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "saints": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "feast"],
+        "properties": {
+          "id": { "$ref": "common.schema.json#/definitions/id" },
+          "inscription": { "type": "string", "description": "Optional icon inscription shown in the medallion, for example ΜΡ ΘΥ." },
+          "name": { "$ref": "common.schema.json#/definitions/localized" },
+          "feast": { "$ref": "common.schema.json#/definitions/localized" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "seasons": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "accent", "title", "dates", "intro"],
+        "properties": {
+          "id": { "$ref": "common.schema.json#/definitions/id" },
+          "accent": { "type": "string", "description": "A cloth color name from design/tokens.json." },
+          "title": { "$ref": "common.schema.json#/definitions/localized" },
+          "dates": { "$ref": "common.schema.json#/definitions/localized" },
+          "intro": { "$ref": "common.schema.json#/definitions/localized" }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

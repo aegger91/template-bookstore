@@ -142,7 +142,7 @@ export function CategoryGrid({ section, lang }: SectionProps) {
     <section className="border-y border-rule bg-paper/60">
       <div className="container-page py-14 md:py-20">
         <SectionHeading lang={lang} eyebrow={section.eyebrow} heading={section.heading} link={{ href: catalogHref(lang), label: getDictionary(lang).nav.allItems }} />
-        <div className="grid gap-8 lg:grid-cols-[2fr_1fr] lg:gap-12">
+        <div className="grid grid-cols-[minmax(0,1fr)] gap-8 lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)] lg:gap-12">
           <div>
             <p className="eyebrow mb-4 !text-ink-soft">{tr(categoryGroups.find((g) => g.id === "books")?.title, lang)}</p>
             <ul className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:gap-4">

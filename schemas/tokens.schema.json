@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "tokens.schema.json",
+  "title": "Design tokens",
+  "description": "Every value becomes a CSS variable, for example color.oxblood becomes --tk-color-oxblood.",
+  "type": "object",
+  "required": ["color", "cloth", "font", "radius", "layout", "shadow"],
+  "definitions": {
+    "hex": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" }
+  },
+  "properties": {
+    "$schema": { "type": "string" },
+    "name": { "type": "string" },
+    "color": {
+      "type": "object",
+      "required": ["cream", "paper", "parchment", "rule", "ink", "inkSoft", "oxblood", "oxbloodDeep", "navy", "navyDeep", "gold", "goldFoil", "goldSoft", "forest", "plum", "success", "danger"],
+      "additionalProperties": { "$ref": "#/definitions/hex" }
+    },
+    "cloth": {
+      "type": "object",
+      "description": "Book cloth colors: [light, dark] for the gradient.",
+      "required": ["oxblood", "navy"],
+      "additionalProperties": { "type": "array", "items": { "$ref": "#/definitions/hex" }, "minItems": 2, "maxItems": 2 }
+    },
+    "font": {
+      "type": "object",
+      "required": ["heading", "body", "ui", "display"],
+      "properties": {
+        "heading": { "type": "string" },
+        "body": { "type": "string" },
+        "ui": { "type": "string" },
+        "display": {
+          "type": "object",
+          "required": ["default", "slavonic", "greek"],
+          "additionalProperties": { "type": "string" }
+        }
+      },
+      "additionalProperties": false
+    },
+    "radius": { "type": "object", "additionalProperties": { "type": "string" } },
+    "layout": { "type": "object", "additionalProperties": { "type": "string" } },
+    "shadow": { "type": "object", "additionalProperties": { "type": "string" } }
+  },
+  "additionalProperties": false
+}

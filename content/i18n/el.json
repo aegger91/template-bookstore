@@ -1,4 +1,5 @@
 {
+  "$schema": "../../schemas/i18n.schema.json",
   "common": {
     "skipToContent": "Μετάβαση στο περιεχόμενο",
     "search": "Αναζήτηση",
@@ -260,7 +261,11 @@
     "related": "Σχετικό βιβλίο"
   },
   "journal": {
-    "kinds": { "list": "Λίστα ανάγνωσης", "review": "Κριτική", "article": "Άρθρο" },
+    "kinds": {
+      "list": "Λίστα ανάγνωσης",
+      "review": "Κριτική",
+      "article": "Άρθρο"
+    },
     "by": "{name}",
     "back": "Όλες οι αναρτήσεις"
   },

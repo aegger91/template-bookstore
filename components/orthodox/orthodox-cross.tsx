@@ -16,7 +16,7 @@ interface Props {
 }
 
 /**
- * The one cross used across the template. Never use the ☦ glyph and never flip this component:
+ * The one cross used across the template. Never use the U+2626 cross glyph and never flip this component:
  * it carries an explicit direction="ltr" and is excluded from RTL mirroring.
  *
  * Slavic: short top bar (title), main bar, and a slanted footrest whose LEFT end (viewer's left) is HIGHER.

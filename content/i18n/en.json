@@ -1,4 +1,5 @@
 {
+  "$schema": "../../schemas/i18n.schema.json",
   "common": {
     "skipToContent": "Skip to content",
     "search": "Search",
@@ -260,7 +261,11 @@
     "related": "Related book"
   },
   "journal": {
-    "kinds": { "list": "Reading list", "review": "Review", "article": "Article" },
+    "kinds": {
+      "list": "Reading list",
+      "review": "Review",
+      "article": "Article"
+    },
     "by": "By {name}",
     "back": "All posts"
   },

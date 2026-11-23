@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "categories.schema.json",
+  "title": "Catalog categories",
+  "type": "object",
+  "required": ["groups", "categories"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "groups": {
+      "type": "array",
+      "description": "Columns in the shop menu.",
+      "items": {
+        "type": "object",
+        "required": ["id", "title"],
+        "properties": { "id": { "$ref": "common.schema.json#/definitions/id" }, "title": { "$ref": "common.schema.json#/definitions/localized" } },
+        "additionalProperties": false
+      }
+    },
+    "categories": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "group", "pictogram", "cloth", "title", "description"],
+        "properties": {
+          "id": { "$ref": "common.schema.json#/definitions/id" },
+          "group": { "type": "string" },
+          "pictogram": {
+            "enum": ["open-book", "halo", "lampada", "scroll", "censer", "picture-book", "analogion", "kiot", "prayer-rope", "cross", "candle", "gift", "gift-card"]
+          },
+          "cloth": { "type": "string", "description": "A cloth color name from design/tokens.json." },
+          "title": { "$ref": "common.schema.json#/definitions/localized" },
+          "description": { "$ref": "common.schema.json#/definitions/localized" }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

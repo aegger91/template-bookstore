@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "i18n.schema.json",
+  "title": "Interface text for one language",
+  "description": "Buttons, labels and messages. Any key left out falls back to the default language. Placeholders like {count} are filled in by the site.",
+  "type": "object",
+  "definitions": {
+    "group": {
+      "type": "object",
+      "additionalProperties": { "oneOf": [{ "type": "string" }, { "$ref": "#/definitions/group" }] }
+    }
+  },
+  "properties": { "$schema": { "type": "string" } },
+  "additionalProperties": { "$ref": "#/definitions/group" }
+}

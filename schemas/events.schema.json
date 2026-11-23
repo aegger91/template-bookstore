@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "events.schema.json",
+  "title": "Events",
+  "type": "object",
+  "required": ["events"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "orthodoxConnectId", "kind", "start", "end", "title", "speaker", "place", "summary", "product"],
+        "properties": {
+          "id": { "$ref": "common.schema.json#/definitions/id" },
+          "orthodoxConnectId": { "type": "string", "description": "Event id in OrthodoxConnect, used for the RSVP link." },
+          "kind": { "enum": ["signing", "talk", "reading-group", "children"] },
+          "start": { "$ref": "common.schema.json#/definitions/dateTime" },
+          "end": { "$ref": "common.schema.json#/definitions/dateTime" },
+          "title": { "$ref": "common.schema.json#/definitions/localized" },
+          "speaker": { "$ref": "common.schema.json#/definitions/localized" },
+          "place": { "$ref": "common.schema.json#/definitions/localized" },
+          "summary": { "$ref": "common.schema.json#/definitions/localized" },
+          "product": { "type": ["string", "null"], "description": "Related product id." }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,4 +1,5 @@
 {
+  "$schema": "../../schemas/i18n.schema.json",
   "common": {
     "skipToContent": "Перейти к содержанию",
     "search": "Поиск",
@@ -260,7 +261,11 @@
     "related": "Книга к событию"
   },
   "journal": {
-    "kinds": { "list": "Список чтения", "review": "Отзыв", "article": "Заметка" },
+    "kinds": {
+      "list": "Список чтения",
+      "review": "Отзыв",
+      "article": "Заметка"
+    },
     "by": "{name}",
     "back": "Все записи"
   },

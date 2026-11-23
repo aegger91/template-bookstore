@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "pages.schema.json",
+  "title": "Pages and their sections",
+  "description": "Every page is a list of sections. Turn a section off with enabled: false, reorder by moving it in the list, or add a page with any path.",
+  "type": "object",
+  "required": ["pages", "templates"],
+  "definitions": {
+    "section": {
+      "type": "object",
+      "required": ["type", "enabled"],
+      "properties": {
+        "type": {
+          "enum": [
+            "hero", "feastCollection", "categoryGrid", "saintShelf", "blessingNote", "eventsPreview", "journalPreview", "visitStrip",
+            "pageHeader", "richText", "productShelf", "catalogBrowser", "cart", "checkout", "account", "wishlist",
+            "wholesaleTiers", "wholesaleForm", "publishersList", "authorsList", "eventsList", "journalList", "visitInfo", "contactForm", "faq",
+            "productDetail", "relatedProducts", "postArticle", "postProducts"
+          ]
+        },
+        "enabled": { "type": "boolean" },
+        "eyebrow": { "$ref": "common.schema.json#/definitions/localized" },
+        "heading": { "$ref": "common.schema.json#/definitions/localized" },
+        "intro": { "$ref": "common.schema.json#/definitions/localized" },
+        "text": { "$ref": "common.schema.json#/definitions/localized" },
+        "body": { "$ref": "common.schema.json#/definitions/localized", "description": "Long text. Separate paragraphs with a blank line." },
+        "products": { "type": "array", "items": { "type": "string" }, "description": "Product ids, for productShelf." },
+        "limit": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "sections": { "type": "array", "items": { "$ref": "#/definitions/section" } }
+  },
+  "properties": {
+    "$schema": { "type": "string" },
+    "pages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["path", "title", "sections"],
+        "properties": {
+          "path": { "type": "string", "pattern": "^([a-z0-9-]+(/[a-z0-9-]+)*)?$", "description": "\"\" is the home page. Nested paths like about/our-team are allowed." },
+          "title": { "$ref": "common.schema.json#/definitions/localized" },
+          "description": { "$ref": "common.schema.json#/definitions/localized" },
+          "sections": { "$ref": "#/definitions/sections" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "templates": {
+      "type": "object",
+      "required": ["category", "product", "post"],
+      "properties": {
+        "category": { "$ref": "#/definitions/sections" },
+        "product": { "$ref": "#/definitions/sections" },
+        "post": { "$ref": "#/definitions/sections" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

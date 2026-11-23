@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "faq.schema.json",
+  "title": "Frequently asked questions",
+  "type": "object",
+  "required": ["groups"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "groups": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "items"],
+        "properties": {
+          "id": { "$ref": "common.schema.json#/definitions/id" },
+          "title": { "$ref": "common.schema.json#/definitions/localized" },
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["q", "a"],
+              "properties": { "q": { "$ref": "common.schema.json#/definitions/localized" }, "a": { "$ref": "common.schema.json#/definitions/localized" } },
+              "additionalProperties": false
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

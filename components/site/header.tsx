@@ -196,7 +196,7 @@ export function Header() {
         <div className="container-page">
           <div
             className={cn(
-              "flex items-center gap-3 transition-[height] duration-300 lg:gap-8",
+              "flex items-center gap-3 transition-[height] duration-300 lg:gap-4 xl:gap-8",
               condensed ? "h-14 md:h-16" : "h-16 md:h-[4.5rem]",
             )}
           >
@@ -273,17 +273,17 @@ export function Header() {
               </SheetContent>
             </Sheet>
 
-            <Link href={href(lang)} className="flex min-w-0 items-center" aria-label={tr(site.brand.name, lang)}>
+            <Link href={href(lang)} className="flex min-w-0 items-center" aria-label={tr(site.brand.name, lang)} data-header-part>
               <Logo lang={lang} condensed={condensed} />
             </Link>
 
-            <nav className="ms-auto hidden items-center gap-1 lg:flex" aria-label="Main">
+            <nav className="ms-auto hidden shrink-0 items-center lg:flex xl:gap-1" aria-label="Main" data-header-part>
               {navigation.header.map((n) =>
                 n.kind === "mega" ? (
                   <div key={n.id} onMouseEnter={openMega} onMouseLeave={scheduleClose}>
                     <button
                       className={cn(
-                        "flex items-center gap-1 rounded-md px-3 py-2 text-[1.02rem] text-ink transition-colors hover:text-oxblood",
+                        "flex items-center gap-1 rounded-md px-1.5 py-2 text-[0.98rem] whitespace-nowrap text-ink transition-colors hover:text-oxblood xl:px-3 xl:text-[1.02rem]",
                         (megaOpen || isActive(n.href)) && "text-oxblood",
                       )}
                       aria-expanded={megaOpen}
@@ -299,7 +299,7 @@ export function Header() {
                     key={n.id}
                     href={href(lang, n.href)}
                     className={cn(
-                      "rounded-md px-3 py-2 text-[1.02rem] whitespace-nowrap text-ink transition-colors hover:text-oxblood",
+                      "rounded-md px-1.5 py-2 text-[0.98rem] whitespace-nowrap text-ink transition-colors hover:text-oxblood xl:px-3 xl:text-[1.02rem]",
                       isActive(n.href) && "text-oxblood",
                     )}
                   >
@@ -309,7 +309,7 @@ export function Header() {
               )}
             </nav>
 
-            <div className="ms-auto flex items-center gap-0.5 lg:ms-2">
+            <div className="ms-auto flex items-center gap-0.5 lg:ms-2" data-header-part>
               <button
                 onClick={() => setSearchOpen(true)}
                 className="grid size-10 place-items-center rounded-full text-ink hover:bg-parchment"

@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "navigation.schema.json",
+  "title": "Menus",
+  "type": "object",
+  "required": ["header", "utility", "footer"],
+  "definitions": {
+    "item": {
+      "type": "object",
+      "required": ["id", "href", "label"],
+      "properties": {
+        "id": { "$ref": "common.schema.json#/definitions/id" },
+        "kind": { "enum": ["mega", "link"], "description": "mega opens the shop menu with all categories." },
+        "href": { "type": "string" },
+        "label": { "$ref": "common.schema.json#/definitions/localized" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "properties": {
+    "$schema": { "type": "string" },
+    "header": { "type": "array", "items": { "$ref": "#/definitions/item" } },
+    "utility": { "type": "array", "items": { "$ref": "#/definitions/item" } },
+    "footer": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "links"],
+        "properties": {
+          "id": { "$ref": "common.schema.json#/definitions/id" },
+          "title": { "$ref": "common.schema.json#/definitions/localized" },
+          "links": { "type": "array", "items": { "$ref": "common.schema.json#/definitions/link" } }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

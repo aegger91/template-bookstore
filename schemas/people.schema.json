@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "people.schema.json",
+  "title": "Publishers, authors and translators",
+  "type": "object",
+  "required": ["publishers", "people"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "publishers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "place", "about"],
+        "properties": {
+          "id": { "$ref": "common.schema.json#/definitions/id" },
+          "name": { "$ref": "common.schema.json#/definitions/localized" },
+          "place": { "$ref": "common.schema.json#/definitions/localized" },
+          "about": { "$ref": "common.schema.json#/definitions/localized" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "people": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "kind", "name", "note"],
+        "properties": {
+          "id": { "$ref": "common.schema.json#/definitions/id" },
+          "kind": { "enum": ["father", "sample"], "description": "father: saints and classic authors. sample: placeholder modern names." },
+          "name": { "$ref": "common.schema.json#/definitions/localized" },
+          "note": { "$ref": "common.schema.json#/definitions/localized" }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

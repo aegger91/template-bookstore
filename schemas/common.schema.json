@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "common.schema.json",
+  "title": "Shared definitions",
+  "definitions": {
+    "localized": {
+      "description": "Plain text, or one value per language code. Missing languages fall back to the default language.",
+      "oneOf": [
+        { "type": "string" },
+        { "type": "object", "minProperties": 1, "additionalProperties": { "type": "string" }, "propertyNames": { "pattern": "^[a-z]{2,3}(-[A-Za-z0-9]+)?$" } }
+      ]
+    },
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "date": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+    "dateTime": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(:\\d{2})?([+-]\\d{2}:\\d{2}|Z)?$" },
+    "link": {
+      "type": "object",
+      "required": ["href", "label"],
+      "properties": {
+        "href": { "type": "string", "description": "Site path without language, like \"catalog\" or \"catalog?category=icons\", or a full URL." },
+        "label": { "$ref": "#/definitions/localized" }
+      },
+      "additionalProperties": false
+    }
+  }
+}
