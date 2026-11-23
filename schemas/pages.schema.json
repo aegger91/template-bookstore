@@ -12,7 +12,7 @@
       "properties": {
         "type": {
           "enum": [
-            "hero", "feastCollection", "categoryGrid", "saintShelf", "blessingNote", "eventsPreview", "journalPreview", "visitStrip",
+            "hero", "feastCollection", "categoryGrid", "saintShelf", "welcome", "eventsPreview", "journalPreview", "visitStrip",
             "pageHeader", "richText", "productShelf", "catalogBrowser", "cart", "checkout", "account", "wishlist",
             "wholesaleTiers", "wholesaleForm", "publishersList", "authorsList", "eventsList", "journalList", "visitInfo", "contactForm", "faq",
             "productDetail", "relatedProducts", "postArticle", "postProducts"

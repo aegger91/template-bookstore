@@ -2,51 +2,34 @@
   "$schema": "../schemas/posts.schema.json",
   "posts": [
     {
-      "slug": "reading-for-the-nativity-fast", "kind": "list", "date": "2026-11-14",
+      "slug": "sample-reading-list",
+      "kind": "list",
+      "date": "2026-11-14",
       "author": { "en": "Bookstore staff", "ru": "Сотрудники лавки", "el": "Το προσωπικό του βιβλιοπωλείου" },
-      "title": { "en": "Five books for the Nativity Fast", "ru": "Пять книг на Рождественский пост", "el": "Πέντε βιβλία για τη Σαρακοστή των Χριστουγέννων" },
-      "excerpt": {
-        "en": "Short, steady reading for forty days, with something for the children too.",
-        "ru": "Короткое и ровное чтение на сорок дней, и кое-что для детей.",
-        "el": "Σύντομη, σταθερή ανάγνωση για σαράντα ημέρες, και κάτι για τα παιδιά."
-      },
-      "body": {
-        "en": "The fast before Nativity is quieter than Great Lent, and the reading can be quieter too. We suggest one patristic book, one life of a saint and one book to read aloud with children.\n\nOn the Incarnation by St. Athanasius is short enough to finish in a few evenings. The Lives of the Saints for December follows the feasts as they come: St. Nicholas, St. Herman, St. Spyridon.\n\nFor children, a picture book about the Nativity and a story about St. Nicholas make a good pair. This is a sample post; replace it with your own list.",
-        "ru": "Рождественский пост тише Великого, и чтение может быть тише. Советуем одну святоотеческую книгу, одно житие и одну книгу для чтения вслух с детьми.\n\n«О воплощении» свт. Афанасия достаточно короткая, чтобы прочитать её за несколько вечеров. Жития святых на декабрь идут вслед за праздниками: святитель Николай, преподобный Герман, святитель Спиридон.\n\nДля детей хорошо подойдут книжка о Рождестве и рассказ о святителе Николае. Это пример записи; замените его своим списком.",
-        "el": "Η Σαρακοστή των Χριστουγέννων είναι πιο ήσυχη από τη Μεγάλη Σαρακοστή, και η ανάγνωση μπορεί να είναι πιο ήσυχη. Προτείνουμε ένα πατερικό βιβλίο, έναν βίο αγίου και ένα βιβλίο για ανάγνωση με τα παιδιά.\n\nΤο «Περί της ενανθρωπήσεως» του Μεγάλου Αθανασίου διαβάζεται σε λίγα βράδια. Οι Βίοι Αγίων του Δεκεμβρίου ακολουθούν τις γιορτές: Άγιος Νικόλαος, Άγιος Γερμανός, Άγιος Σπυρίδων.\n\nΓια τα παιδιά, ένα βιβλίο για τη Γέννηση και μια ιστορία για τον Άγιο Νικόλαο ταιριάζουν καλά. Ενδεικτική ανάρτηση· αντικαταστήστε τη με τη δική σας λίστα."
-      },
+      "title": { "en": "Sample reading list", "ru": "Пример подборки книг", "el": "Ενδεικτική λίστα ανάγνωσης" },
+      "excerpt": { "en": "Placeholder for a short list of titles from your shelves.", "ru": "Место для короткой подборки книг с ваших полок.", "el": "Θέση για μια σύντομη λίστα τίτλων από τα ράφια σας." },
+      "body": { "en": "Placeholder text for a reading list. Write one or two lines and link the books below.", "ru": "Место для текста подборки. Напишите одну-две строки и привяжите книги ниже.", "el": "Θέση για το κείμενο της λίστας. Γράψτε μία ή δύο γραμμές και συνδέστε τα βιβλία παρακάτω." },
       "products": ["incarnation", "december-saints", "star-picture-book", "nicholas-story", "beeswax-tapers"]
     },
     {
-      "slug": "review-the-ladder", "kind": "review", "date": "2026-10-30", "rating": 5,
+      "slug": "sample-review",
+      "kind": "review",
+      "date": "2026-10-30",
+      "rating": 5,
       "author": { "en": "Sample reviewer", "ru": "Условный рецензент", "el": "Ενδεικτικός κριτικός" },
-      "title": { "en": "Review: The Ladder of Divine Ascent, sample edition", "ru": "Отзыв: «Лествица», образец издания", "el": "Κριτική: «Κλίμαξ», ενδεικτική έκδοση" },
-      "excerpt": {
-        "en": "How this sample edition reads, and who it suits. A model for staff reviews.",
-        "ru": "Как читается это условное издание и кому оно подойдёт. Образец отзыва сотрудника.",
-        "el": "Πώς διαβάζεται αυτή η ενδεικτική έκδοση και σε ποιον ταιριάζει. Πρότυπο κριτικής προσωπικού."
-      },
-      "body": {
-        "en": "A staff review should say plainly who a book is for. This one is for anyone keeping Great Lent who wants a single book to carry through the fast.\n\nTalk about the translation, the size, the paper and the notes. Say what a reader new to the Fathers should read first. Keep it honest and short.\n\nThis is a sample review. The edition it describes is a placeholder.",
-        "ru": "Отзыв сотрудника должен просто говорить, для кого эта книга. Эта для всех, кто проходит Великий пост и хочет одну книгу на весь пост.\n\nРасскажите о переводе, формате, бумаге и примечаниях. Скажите, с чего начать тому, кто впервые читает святых отцов. Честно и коротко.\n\nЭто пример отзыва. Описанное издание условное.",
-        "el": "Μια κριτική του προσωπικού πρέπει να λέει απλά σε ποιον απευθύνεται ένα βιβλίο. Αυτό είναι για όποιον νηστεύει τη Μεγάλη Σαρακοστή και θέλει ένα βιβλίο για όλη τη διάρκειά της.\n\nΜιλήστε για τη μετάφραση, το σχήμα, το χαρτί και τις σημειώσεις. Πείτε από πού να ξεκινήσει κάποιος που διαβάζει για πρώτη φορά Πατέρες. Ειλικρινά και σύντομα.\n\nΕνδεικτική κριτική. Η έκδοση που περιγράφεται είναι ενδεικτική."
-      },
+      "title": { "en": "Sample review: The Ladder of Divine Ascent", "ru": "Пример отзыва: «Лествица»", "el": "Ενδεικτική κριτική: «Κλίμαξ»" },
+      "excerpt": { "en": "Placeholder for a staff review of one title.", "ru": "Место для отзыва сотрудника об одной книге.", "el": "Θέση για μια κριτική του προσωπικού για έναν τίτλο." },
+      "body": { "en": "Placeholder text for a review. Replace with your own words about the edition.", "ru": "Место для текста отзыва. Замените своими словами об издании.", "el": "Θέση για το κείμενο της κριτικής. Αντικαταστήστε με δικά σας λόγια για την έκδοση." },
       "products": ["ladder"]
     },
     {
-      "slug": "caring-for-a-prayer-rope", "kind": "article", "date": "2026-09-21",
+      "slug": "sample-store-news",
+      "kind": "article",
+      "date": "2026-09-21",
       "author": { "en": "Bookstore staff", "ru": "Сотрудники лавки", "el": "Το προσωπικό του βιβλιοπωλείου" },
-      "title": { "en": "Caring for a wool prayer rope", "ru": "Как ухаживать за шерстяными чётками", "el": "Η φροντίδα ενός μάλλινου κομποσχοινιού" },
-      "excerpt": {
-        "en": "Washing, drying and when to ask for a new one. Practical notes from the counter.",
-        "ru": "Стирка, сушка и когда пора просить новые. Практические заметки из лавки.",
-        "el": "Πλύσιμο, στέγνωμα και πότε να ζητήσετε καινούργιο. Πρακτικές σημειώσεις από τον πάγκο."
-      },
-      "body": {
-        "en": "Wool prayer ropes are tied by hand and they last a long time with a little care.\n\nWash by hand in cool water with a mild soap, press out the water in a towel and let it dry flat. Do not use a dryer.\n\nIf a knot loosens, bring it to the store and we will look at it. This is a sample post.",
-        "ru": "Шерстяные чётки плетут вручную, и при небольшом уходе они служат долго.\n\nСтирайте вручную в прохладной воде с мягким мылом, отожмите в полотенце и сушите разложив. Не используйте сушильную машину.\n\nЕсли узел ослаб, принесите чётки в лавку, мы посмотрим. Это пример записи.",
-        "el": "Τα μάλλινα κομποσχοίνια πλέκονται στο χέρι και με λίγη φροντίδα κρατούν πολύ.\n\nΠλύνετε στο χέρι με δροσερό νερό και ήπιο σαπούνι, στίψτε απαλά σε πετσέτα και αφήστε να στεγνώσει απλωμένο. Όχι στεγνωτήριο.\n\nΑν χαλαρώσει ένας κόμπος, φέρτε το στο κατάστημα να το δούμε. Ενδεικτική ανάρτηση."
-      },
+      "title": { "en": "Sample store news", "ru": "Пример новости лавки", "el": "Ενδεικτικά νέα του καταστήματος" },
+      "excerpt": { "en": "Placeholder for news: new arrivals, holiday hours or a new shelf.", "ru": "Место для новости: поступления, часы работы в праздники, новая полка.", "el": "Θέση για νέα: νέες αφίξεις, ωράριο εορτών ή ένα νέο ράφι." },
+      "body": { "en": "Placeholder text for a news post. One or two lines are enough.", "ru": "Место для текста новости. Достаточно одной-двух строк.", "el": "Θέση για το κείμενο της ανάρτησης. Αρκούν μία ή δύο γραμμές." },
       "products": ["rope-33", "rope-100"]
     }
   ]

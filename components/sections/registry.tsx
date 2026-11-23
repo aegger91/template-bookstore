@@ -5,7 +5,7 @@ import { CatalogBrowser } from "./catalog-browser";
 import { CheckoutSection } from "./checkout";
 import { PageHeader, ProductShelf, RichText, type SectionProps, VisitStrip } from "./common";
 import { AccountSection, ContactForm, WholesaleForm, WishlistSection } from "./forms";
-import { BlessingNote, CategoryGrid, EventsPreview, FeastCollection, Hero, JournalPreview, SaintShelf } from "./home";
+import { CategoryGrid, EventsPreview, FeastCollection, Hero, JournalPreview, SaintShelf, WelcomeNote } from "./home";
 import { AuthorsList, EventsList, FaqSection, JournalList, PostArticle, PostProducts, PublishersList, VisitInfo, WholesaleTiers } from "./misc";
 import { ProductDetail, RelatedProducts } from "./product";
 
@@ -15,7 +15,7 @@ const sections: Record<string, ComponentType<SectionProps>> = {
   feastCollection: FeastCollection,
   categoryGrid: CategoryGrid,
   saintShelf: SaintShelf,
-  blessingNote: BlessingNote,
+  welcome: WelcomeNote,
   eventsPreview: EventsPreview,
   journalPreview: JournalPreview,
   visitStrip: VisitStrip,

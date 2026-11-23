@@ -27,7 +27,7 @@ export function WholesaleTiers({ lang }: SectionProps) {
           {tiers.map(([t, d], i) => (
             <li key={i} className="cloth relative rounded-md p-5 text-paper shadow-book" style={clothStyle(["navy", "oxblood", "forest"][i])}>
               <span className="absolute inset-2 rounded-sm border border-gold-foil/35" />
-              <p className="relative font-display text-3xl text-gold-foil">{["Α", "Β", "Γ"][i]}</p>
+              <p className="relative font-display text-3xl text-gold-foil">{i + 1}</p>
               <p className="relative mt-3 text-[1.02rem] leading-snug">{t}</p>
               <p className="foil-text relative mt-3 font-heading text-xl">{d}</p>
             </li>
@@ -193,8 +193,8 @@ export function PostArticle({ lang, post }: SectionProps & { post: Post }) {
         </p>
         <div className="rule-ornament my-8" aria-hidden />
         <div className="prose-reading text-[1.15rem] leading-[1.8] text-ink">
-          {paragraphs(tr(post.body, lang)).map((p, i) => (
-            <p key={i} className={i === 0 ? "first-letter:float-start first-letter:me-2 first-letter:font-display first-letter:text-[3.6rem] first-letter:leading-[0.85] first-letter:text-oxblood" : undefined}>
+          {paragraphs(tr(post.body, lang)).map((p, i, all) => (
+            <p key={i} className={i === 0 && all.join("").length > 240 ? "first-letter:float-start first-letter:me-2 first-letter:font-display first-letter:text-[3.6rem] first-letter:leading-[0.85] first-letter:text-oxblood" : undefined}>
               {p}
             </p>
           ))}

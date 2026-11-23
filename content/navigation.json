@@ -28,7 +28,6 @@
       "id": "store", "title": { "en": "The store", "ru": "Лавка", "el": "Το βιβλιοπωλείο" },
       "links": [
         { "href": "about", "label": { "en": "About us", "ru": "О нас", "el": "Σχετικά με εμάς" } },
-        { "href": "about/how-we-choose-books", "label": { "en": "How we choose books", "ru": "Как мы выбираем книги", "el": "Πώς επιλέγουμε βιβλία" } },
         { "href": "events", "label": { "en": "Events", "ru": "События", "el": "Εκδηλώσεις" } },
         { "href": "journal", "label": { "en": "Journal and reviews", "ru": "Журнал и отзывы", "el": "Ημερολόγιο και κριτικές" } },
         { "href": "visit", "label": { "en": "Hours and directions", "ru": "Часы и проезд", "el": "Ωράριο και οδηγίες" } }

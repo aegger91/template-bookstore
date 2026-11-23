@@ -72,7 +72,7 @@ export function RichText({ section, lang }: SectionProps) {
       <div className="prose-reading mx-auto max-w-[var(--tk-layout-readingWidth)] text-[1.12rem] leading-[1.75] text-ink">
         {section.heading && <h2>{tr(section.heading, lang)}</h2>}
         {paragraphs(text).map((p, i) => (
-          <p key={i} className={cn(i === 0 && "first-letter:float-start first-letter:me-2 first-letter:font-display first-letter:text-[3.6rem] first-letter:leading-[0.85] first-letter:text-oxblood")}>
+          <p key={i} className={cn(i === 0 && text.length > 240 && "first-letter:float-start first-letter:me-2 first-letter:font-display first-letter:text-[3.6rem] first-letter:leading-[0.85] first-letter:text-oxblood")}>
             {p}
           </p>
         ))}

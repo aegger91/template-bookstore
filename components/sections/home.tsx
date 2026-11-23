@@ -232,7 +232,7 @@ export function SaintShelf({ section, lang }: SectionProps) {
   );
 }
 
-export function BlessingNote({ section, lang }: SectionProps) {
+export function WelcomeNote({ section, lang }: SectionProps) {
   const link = section.link as LinkConfig | undefined;
   return (
     <section className="container-page py-14 md:py-20">
