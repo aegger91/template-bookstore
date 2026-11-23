@@ -1,0 +1,47 @@
+{
+  "$schema": "../schemas/navigation.schema.json",
+  "header": [
+    { "id": "shop", "kind": "mega", "href": "catalog", "label": { "en": "Shop", "ru": "Каталог", "el": "Κατάστημα" } },
+    { "id": "events", "kind": "link", "href": "events", "label": { "en": "Events", "ru": "События", "el": "Εκδηλώσεις" } },
+    { "id": "journal", "kind": "link", "href": "journal", "label": { "en": "Journal", "ru": "Журнал", "el": "Ημερολόγιο" } },
+    { "id": "wholesale", "kind": "link", "href": "wholesale", "label": { "en": "Parish orders", "ru": "Заказы для приходов", "el": "Παραγγελίες ενοριών" } },
+    { "id": "visit", "kind": "link", "href": "visit", "label": { "en": "Visit", "ru": "Как нас найти", "el": "Επισκεφθείτε μας" } }
+  ],
+  "utility": [
+    { "id": "about", "href": "about", "label": { "en": "About", "ru": "О нас", "el": "Σχετικά" } },
+    { "id": "publishers", "href": "publishers", "label": { "en": "Publishers and authors", "ru": "Издатели и авторы", "el": "Εκδότες και συγγραφείς" } },
+    { "id": "faq", "href": "faq", "label": { "en": "FAQ", "ru": "Вопросы", "el": "Συχνές ερωτήσεις" } },
+    { "id": "contact", "href": "contact", "label": { "en": "Contact", "ru": "Контакты", "el": "Επικοινωνία" } }
+  ],
+  "footer": [
+    {
+      "id": "shop", "title": { "en": "Shop", "ru": "Каталог", "el": "Κατάστημα" },
+      "links": [
+        { "href": "catalog", "label": { "en": "All items", "ru": "Все товары", "el": "Όλα τα είδη" } },
+        { "href": "catalog/scripture-prayer", "label": { "en": "Prayer books", "ru": "Молитвословы", "el": "Προσευχητάρια" } },
+        { "href": "catalog/icons", "label": { "en": "Icons", "ru": "Иконы", "el": "Εικόνες" } },
+        { "href": "catalog/gift-cards", "label": { "en": "Gift cards", "ru": "Подарочные карты", "el": "Δωροκάρτες" } },
+        { "href": "publishers", "label": { "en": "Publishers and authors", "ru": "Издатели и авторы", "el": "Εκδότες και συγγραφείς" } }
+      ]
+    },
+    {
+      "id": "store", "title": { "en": "The store", "ru": "Лавка", "el": "Το βιβλιοπωλείο" },
+      "links": [
+        { "href": "about", "label": { "en": "About us", "ru": "О нас", "el": "Σχετικά με εμάς" } },
+        { "href": "events", "label": { "en": "Events", "ru": "События", "el": "Εκδηλώσεις" } },
+        { "href": "journal", "label": { "en": "Journal and reviews", "ru": "Журнал и отзывы", "el": "Ημερολόγιο και κριτικές" } },
+        { "href": "visit", "label": { "en": "Hours and directions", "ru": "Часы и проезд", "el": "Ωράριο και οδηγίες" } }
+      ]
+    },
+    {
+      "id": "help", "title": { "en": "Help", "ru": "Помощь", "el": "Βοήθεια" },
+      "links": [
+        { "href": "faq", "label": { "en": "Shipping and returns", "ru": "Доставка и возврат", "el": "Αποστολές και επιστροφές" } },
+        { "href": "wholesale", "label": { "en": "Parish and wholesale", "ru": "Приходам и оптом", "el": "Ενορίες και χονδρική" } },
+        { "href": "account", "label": { "en": "Your account", "ru": "Личный кабинет", "el": "Ο λογαριασμός σας" } },
+        { "href": "wishlist", "label": { "en": "Wishlist", "ru": "Избранное", "el": "Λίστα επιθυμιών" } },
+        { "href": "contact", "label": { "en": "Contact", "ru": "Контакты", "el": "Επικοινωνία" } }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "$schema": "../../schemas/categories.schema.json",
+  "groups": [
+    { "id": "books", "title": { "en": "Books", "ru": "Книги", "el": "Βιβλία" } },
+    { "id": "church", "title": { "en": "Music and sacred goods", "ru": "Музыка и церковная утварь", "el": "Μουσική και εκκλησιαστικά είδη" } },
+    { "id": "gifts", "title": { "en": "Gifts", "ru": "Подарки", "el": "Δώρα" } }
+  ],
+  "categories": [
+    {
+      "id": "scripture-prayer", "group": "books", "pictogram": "open-book", "cloth": "oxblood",
+      "title": { "en": "Scripture and prayer books", "ru": "Писание и молитвословы", "el": "Γραφή και προσευχητάρια" },
+      "description": { "en": "Gospels, psalters and prayer books for home and church.", "ru": "Евангелия, Псалтири и молитвословы для дома и храма.", "el": "Ευαγγέλια, Ψαλτήρια και προσευχητάρια για το σπίτι και τον ναό." }
+    },
+    {
+      "id": "lives-of-saints", "group": "books", "pictogram": "halo", "cloth": "umber",
+      "title": { "en": "Lives of Saints", "ru": "Жития святых", "el": "Βίοι Αγίων" },
+      "description": { "en": "Lives, sayings and stories of the saints.", "ru": "Жития, изречения и рассказы о святых.", "el": "Βίοι, αποφθέγματα και διηγήσεις των αγίων." }
+    },
+    {
+      "id": "spiritual-life", "group": "books", "pictogram": "lampada", "cloth": "navy",
+      "title": { "en": "Spiritual life", "ru": "Духовная жизнь", "el": "Πνευματική ζωή" },
+      "description": { "en": "Prayer, repentance and the inner life, from the Fathers to today.", "ru": "Молитва, покаяние и внутренняя жизнь, от отцов до наших дней.", "el": "Προσευχή, μετάνοια και εσωτερική ζωή, από τους Πατέρες έως σήμερα." }
+    },
+    {
+      "id": "theology-history", "group": "books", "pictogram": "scroll", "cloth": "slate",
+      "title": { "en": "Theology and history", "ru": "Богословие и история", "el": "Θεολογία και ιστορία" },
+      "description": { "en": "Doctrine, councils and the story of the Church.", "ru": "Догматика, соборы и история Церкви.", "el": "Δόγμα, σύνοδοι και η ιστορία της Εκκλησίας." }
+    },
+    {
+      "id": "liturgical", "group": "books", "pictogram": "censer", "cloth": "plum",
+      "title": { "en": "Liturgical and service books", "ru": "Богослужебные книги", "el": "Λειτουργικά βιβλία" },
+      "description": { "en": "Service texts for readers, choirs and clergy.", "ru": "Тексты служб для чтецов, хора и духовенства.", "el": "Ακολουθίες για αναγνώστες, χορούς και κλήρο." }
+    },
+    {
+      "id": "children", "group": "books", "pictogram": "picture-book", "cloth": "forest",
+      "title": { "en": "Children", "ru": "Детям", "el": "Παιδικά" },
+      "description": { "en": "Picture books, saints and prayers for young readers.", "ru": "Книжки с картинками, святые и молитвы для детей.", "el": "Εικονογραφημένα βιβλία, άγιοι και προσευχές για παιδιά." }
+    },
+    {
+      "id": "music-chant", "group": "church", "pictogram": "analogion", "cloth": "navy",
+      "title": { "en": "Music and chant", "ru": "Музыка и пение", "el": "Μουσική και ψαλμωδία" },
+      "description": { "en": "Recordings and scores of Byzantine and Slavic chant.", "ru": "Записи и ноты византийского и славянского пения.", "el": "Ηχογραφήσεις και παρτιτούρες βυζαντινής και σλαβικής ψαλμωδίας." }
+    },
+    {
+      "id": "icons", "group": "church", "pictogram": "kiot", "cloth": "umber",
+      "title": { "en": "Icons", "ru": "Иконы", "el": "Εικόνες" },
+      "description": { "en": "Mounted prints and hand-painted icons for the icon corner.", "ru": "Иконы на дереве и рукописные иконы для красного угла.", "el": "Εικόνες σε ξύλο και αγιογραφίες για το εικονοστάσι του σπιτιού." }
+    },
+    {
+      "id": "prayer-ropes", "group": "church", "pictogram": "prayer-rope", "cloth": "slate",
+      "title": { "en": "Prayer ropes", "ru": "Чётки", "el": "Κομποσχοίνια" },
+      "description": { "en": "Wool prayer ropes tied by hand.", "ru": "Шерстяные чётки ручного плетения.", "el": "Μάλλινα κομποσχοίνια πλεγμένα στο χέρι." }
+    },
+    {
+      "id": "crosses", "group": "church", "pictogram": "cross", "cloth": "oxblood",
+      "title": { "en": "Crosses", "ru": "Кресты", "el": "Σταυροί" },
+      "description": { "en": "Baptismal, pendant and wall crosses.", "ru": "Нательные, крестильные и настенные кресты.", "el": "Βαπτιστικοί, κρεμαστοί και επιτοίχιοι σταυροί." }
+    },
+    {
+      "id": "incense-candles", "group": "church", "pictogram": "candle", "cloth": "umber",
+      "title": { "en": "Incense and candles", "ru": "Ладан и свечи", "el": "Λιβάνι και κεριά" },
+      "description": { "en": "Monastery incense, charcoal and beeswax candles.", "ru": "Монастырский ладан, уголь и восковые свечи.", "el": "Μοναστηριακό λιβάνι, καρβουνάκια και κεριά από μελισσοκέρι." }
+    },
+    {
+      "id": "gifts", "group": "gifts", "pictogram": "gift", "cloth": "forest",
+      "title": { "en": "Gifts", "ru": "Подарки", "el": "Δώρα" },
+      "description": { "en": "For baptisms, name days and weddings.", "ru": "К крещению, именинам и венчанию.", "el": "Για βαπτίσεις, ονομαστικές εορτές και γάμους." }
+    },
+    {
+      "id": "gift-cards", "group": "gifts", "pictogram": "gift-card", "cloth": "navy",
+      "title": { "en": "Gift cards", "ru": "Подарочные карты", "el": "Δωροκάρτες" },
+      "description": { "en": "Let them choose their own book.", "ru": "Пусть выберут книгу сами.", "el": "Αφήστε τους να διαλέξουν το δικό τους βιβλίο." }
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "$schema": "../../schemas/saints.schema.json",
+  "saints": [
+    {
+      "id": "theotokos",
+      "inscription": "ΜΡ ΘΥ",
+      "name": { "en": "The Most Holy Theotokos", "ru": "Пресвятая Богородица", "el": "Υπεραγία Θεοτόκος" },
+      "feast": { "en": "Dormition, August 15", "ru": "Успение, 15 (28) августа", "el": "Κοίμηση, 15 Αυγούστου" }
+    },
+    {
+      "id": "nicholas",
+      "name": { "en": "St. Nicholas of Myra", "ru": "Свт. Николай Мирликийский", "el": "Άγιος Νικόλαος Μύρων" },
+      "feast": { "en": "December 6", "ru": "6 (19) декабря", "el": "6 Δεκεμβρίου" }
+    },
+    {
+      "id": "john-chrysostom",
+      "name": { "en": "St. John Chrysostom", "ru": "Свт. Иоанн Златоуст", "el": "Άγιος Ιωάννης ο Χρυσόστομος" },
+      "feast": { "en": "November 13", "ru": "13 (26) ноября", "el": "13 Νοεμβρίου" }
+    },
+    {
+      "id": "seraphim-sarov",
+      "name": { "en": "St. Seraphim of Sarov", "ru": "Прп. Серафим Саровский", "el": "Άγιος Σεραφείμ του Σάρωφ" },
+      "feast": { "en": "January 2", "ru": "2 (15) января", "el": "2 Ιανουαρίου" }
+    },
+    {
+      "id": "mary-of-egypt",
+      "name": { "en": "St. Mary of Egypt", "ru": "Прп. Мария Египетская", "el": "Οσία Μαρία η Αιγυπτία" },
+      "feast": { "en": "April 1 and the fifth Sunday of Great Lent", "ru": "1 (14) апреля и пятая неделя Великого поста", "el": "1 Απριλίου και Ε΄ Κυριακή των Νηστειών" }
+    },
+    {
+      "id": "herman-alaska",
+      "name": { "en": "St. Herman of Alaska", "ru": "Прп. Герман Аляскинский", "el": "Άγιος Γερμανός της Αλάσκας" },
+      "feast": { "en": "December 13 and August 9", "ru": "13 (26) декабря и 27 июля (9 августа)", "el": "13 Δεκεμβρίου και 9 Αυγούστου" }
+    }
+  ],
+  "seasons": [
+    {
+      "id": "nativity-fast",
+      "accent": "navy",
+      "title": { "en": "The Nativity Fast", "ru": "Рождественский пост", "el": "Σαρακοστή των Χριστουγέννων" },
+      "dates": { "en": "November 15 to December 24", "ru": "28 ноября – 6 января (15 ноября – 24 декабря ст. ст.)", "el": "15 Νοεμβρίου έως 24 Δεκεμβρίου" },
+      "intro": { "en": "A seasonal shelf. Replace this line with your own.", "ru": "Сезонная полка. Замените эту строку своей.", "el": "Εποχικό ράφι. Αντικαταστήστε αυτή τη γραμμή με τη δική σας." }
+    },
+    {
+      "id": "great-lent",
+      "accent": "plum",
+      "title": { "en": "Great Lent", "ru": "Великий пост", "el": "Μεγάλη Σαρακοστή" },
+      "dates": { "en": "Clean Monday to Lazarus Saturday", "ru": "От Чистого понедельника до Лазаревой субботы", "el": "Από την Καθαρά Δευτέρα έως το Σάββατο του Λαζάρου" },
+      "intro": { "en": "A seasonal shelf. Replace this line with your own.", "ru": "Сезонная полка. Замените эту строку своей.", "el": "Εποχικό ράφι. Αντικαταστήστε αυτή τη γραμμή με τη δική σας." }
+    },
+    {
+      "id": "pascha",
+      "accent": "oxblood",
+      "title": { "en": "Pascha", "ru": "Пасха", "el": "Πάσχα" },
+      "dates": { "en": "Bright Week to Ascension", "ru": "От Светлой седмицы до Вознесения", "el": "Από τη Διακαινήσιμο έως την Ανάληψη" },
+      "intro": { "en": "A seasonal shelf. Replace this line with your own.", "ru": "Сезонная полка. Замените эту строку своей.", "el": "Εποχικό ράφι. Αντικαταστήστε αυτή τη γραμμή με τη δική σας." }
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "site.schema.json",
+  "title": "Store settings",
+  "type": "object",
+  "required": ["slug", "brand", "logo", "languages", "defaultLanguage", "contact", "hours", "map", "commerce", "orthodoxConnect", "forms", "seasons", "routes"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "slug": { "$ref": "common.schema.json#/definitions/id", "description": "Template id. Also namespaces the cart in the browser." },
+    "brand": {
+      "type": "object",
+      "required": ["name", "shortName", "tagline", "sampleNotice"],
+      "properties": {
+        "name": { "$ref": "common.schema.json#/definitions/localized" },
+        "shortName": { "$ref": "common.schema.json#/definitions/localized", "description": "Used on small screens and in the seal logo." },
+        "tagline": { "$ref": "common.schema.json#/definitions/localized" },
+        "sampleNotice": { "$ref": "common.schema.json#/definitions/localized", "description": "Thin notice above the header. Set to \"\" to hide." }
+      },
+      "additionalProperties": false
+    },
+    "logo": {
+      "type": "object",
+      "required": ["style", "mark"],
+      "properties": {
+        "style": { "enum": ["wordmark", "seal", "kiot", "square"], "description": "wordmark: mark and name. seal: round seal with the short name. kiot: mark in an arched frame. square: your own image file." },
+        "mark": { "enum": ["slavic-cross", "byzantine-cross", "icxc-nika", "none"] },
+        "image": { "type": "string", "description": "Path under public/, used when style is square." },
+        "alt": { "$ref": "common.schema.json#/definitions/localized" }
+      },
+      "additionalProperties": false
+    },
+    "languages": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["code", "label", "nativeLabel", "dir", "locale"],
+        "properties": {
+          "code": { "type": "string", "pattern": "^[a-z]{2,3}$" },
+          "label": { "type": "string" },
+          "nativeLabel": { "type": "string" },
+          "dir": { "enum": ["ltr", "rtl"] },
+          "locale": { "type": "string", "description": "Used for dates and prices, for example en-US." },
+          "displayFont": { "enum": ["default", "slavonic", "greek"], "description": "Font for short display lines such as the epigraph and drop caps." }
+        },
+        "additionalProperties": false
+      }
+    },
+    "defaultLanguage": { "type": "string" },
+    "contact": {
+      "type": "object",
+      "required": ["email", "phone", "address"],
+      "properties": {
+        "email": { "type": "string" },
+        "phone": { "type": "string" },
+        "address": {
+          "type": "object",
+          "required": ["line1", "city", "region", "postalCode", "country"],
+          "properties": {
+            "line1": { "$ref": "common.schema.json#/definitions/localized" },
+            "line2": { "$ref": "common.schema.json#/definitions/localized" },
+            "city": { "$ref": "common.schema.json#/definitions/localized" },
+            "region": { "type": "string" },
+            "postalCode": { "type": "string" },
+            "country": { "$ref": "common.schema.json#/definitions/localized" }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "hours": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["days", "time"],
+        "properties": { "days": { "$ref": "common.schema.json#/definitions/localized" }, "time": { "$ref": "common.schema.json#/definitions/localized" } },
+        "additionalProperties": false
+      }
+    },
+    "hoursNote": { "$ref": "common.schema.json#/definitions/localized" },
+    "map": {
+      "type": "object",
+      "required": ["embedUrl", "directionsUrl"],
+      "properties": {
+        "embedUrl": { "type": ["string", "null"], "description": "Map iframe URL. Leave null to show the drawn placeholder." },
+        "directionsUrl": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "commerce": {
+      "type": "object",
+      "required": ["currency", "provider", "checkoutEndpoint", "shipping", "pickup", "parishBulk"],
+      "properties": {
+        "currency": { "type": "string", "pattern": "^[A-Z]{3}$" },
+        "provider": { "enum": ["none", "stripe", "authorize-net"], "description": "none runs checkout in demo mode." },
+        "checkoutEndpoint": { "type": ["string", "null"], "description": "Your server endpoint that creates the payment session. See lib/commerce.ts." },
+        "shipping": {
+          "type": "object",
+          "required": ["flatRate", "freeOver", "giftWrap"],
+          "properties": { "flatRate": { "type": "number", "minimum": 0 }, "freeOver": { "type": "number", "minimum": 0 }, "giftWrap": { "type": "number", "minimum": 0 } },
+          "additionalProperties": false
+        },
+        "pickup": { "type": "object", "required": ["enabled"], "properties": { "enabled": { "type": "boolean" } }, "additionalProperties": false },
+        "parishBulk": {
+          "type": "object",
+          "required": ["enabled", "minQuantity"],
+          "properties": { "enabled": { "type": "boolean" }, "minQuantity": { "type": "integer", "minimum": 1 } },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "orthodoxConnect": {
+      "type": "object",
+      "required": ["enabled", "appUrl", "organizationId", "newsletter", "eventsRsvp"],
+      "properties": {
+        "enabled": { "type": "boolean" },
+        "appUrl": { "type": "string" },
+        "organizationId": { "type": "string" },
+        "newsletter": {
+          "type": "object",
+          "required": ["enabled", "endpoint"],
+          "properties": { "enabled": { "type": "boolean" }, "endpoint": { "type": ["string", "null"] } },
+          "additionalProperties": false
+        },
+        "eventsRsvp": { "type": "object", "required": ["enabled"], "properties": { "enabled": { "type": "boolean" } }, "additionalProperties": false }
+      },
+      "additionalProperties": false
+    },
+    "forms": {
+      "type": "object",
+      "required": ["endpoint"],
+      "properties": { "endpoint": { "type": ["string", "null"], "description": "Where contact, wholesale and notify forms POST. null runs them in demo mode." } },
+      "additionalProperties": false
+    },
+    "seasons": {
+      "type": "object",
+      "required": ["active", "fallback", "calendar"],
+      "properties": {
+        "active": { "type": "string", "description": "\"auto\" picks the season from the calendar below, or name a season id to pin it." },
+        "fallback": { "type": "string" },
+        "calendar": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["season", "start", "end"],
+            "properties": {
+              "season": { "type": "string" },
+              "start": { "$ref": "common.schema.json#/definitions/date" },
+              "end": { "$ref": "common.schema.json#/definitions/date" }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "routes": {
+      "type": "object",
+      "required": ["category", "product", "post"],
+      "properties": {
+        "category": { "$ref": "common.schema.json#/definitions/id" },
+        "product": { "$ref": "common.schema.json#/definitions/id" },
+        "post": { "$ref": "common.schema.json#/definitions/id" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

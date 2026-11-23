@@ -1,0 +1,36 @@
+{
+  "$schema": "../schemas/posts.schema.json",
+  "posts": [
+    {
+      "slug": "sample-reading-list",
+      "kind": "list",
+      "date": "2026-11-14",
+      "author": { "en": "Bookstore staff", "ru": "Сотрудники лавки", "el": "Το προσωπικό του βιβλιοπωλείου" },
+      "title": { "en": "Sample reading list", "ru": "Пример подборки книг", "el": "Ενδεικτική λίστα ανάγνωσης" },
+      "excerpt": { "en": "Placeholder for a short list of titles from your shelves.", "ru": "Место для короткой подборки книг с ваших полок.", "el": "Θέση για μια σύντομη λίστα τίτλων από τα ράφια σας." },
+      "body": { "en": "Placeholder text for a reading list. Write one or two lines and link the books below.", "ru": "Место для текста подборки. Напишите одну-две строки и привяжите книги ниже.", "el": "Θέση για το κείμενο της λίστας. Γράψτε μία ή δύο γραμμές και συνδέστε τα βιβλία παρακάτω." },
+      "products": ["incarnation", "december-saints", "star-picture-book", "nicholas-story", "beeswax-tapers"]
+    },
+    {
+      "slug": "sample-review",
+      "kind": "review",
+      "date": "2026-10-30",
+      "rating": 5,
+      "author": { "en": "Sample reviewer", "ru": "Условный рецензент", "el": "Ενδεικτικός κριτικός" },
+      "title": { "en": "Sample review: The Ladder of Divine Ascent", "ru": "Пример отзыва: «Лествица»", "el": "Ενδεικτική κριτική: «Κλίμαξ»" },
+      "excerpt": { "en": "Placeholder for a staff review of one title.", "ru": "Место для отзыва сотрудника об одной книге.", "el": "Θέση για μια κριτική του προσωπικού για έναν τίτλο." },
+      "body": { "en": "Placeholder text for a review. Replace with your own words about the edition.", "ru": "Место для текста отзыва. Замените своими словами об издании.", "el": "Θέση για το κείμενο της κριτικής. Αντικαταστήστε με δικά σας λόγια για την έκδοση." },
+      "products": ["ladder"]
+    },
+    {
+      "slug": "sample-store-news",
+      "kind": "article",
+      "date": "2026-09-21",
+      "author": { "en": "Bookstore staff", "ru": "Сотрудники лавки", "el": "Το προσωπικό του βιβλιοπωλείου" },
+      "title": { "en": "Sample store news", "ru": "Пример новости лавки", "el": "Ενδεικτικά νέα του καταστήματος" },
+      "excerpt": { "en": "Placeholder for news: new arrivals, holiday hours or a new shelf.", "ru": "Место для новости: поступления, часы работы в праздники, новая полка.", "el": "Θέση για νέα: νέες αφίξεις, ωράριο εορτών ή ένα νέο ράφι." },
+      "body": { "en": "Placeholder text for a news post. One or two lines are enough.", "ru": "Место для текста новости. Достаточно одной-двух строк.", "el": "Θέση για το κείμενο της ανάρτησης. Αρκούν μία ή δύο γραμμές." },
+      "products": ["rope-33", "rope-100"]
+    }
+  ]
+}

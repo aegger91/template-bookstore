@@ -1,0 +1,174 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* Design tokens are injected as --tk-* variables from design/tokens.json (see lib/tokens.ts). */
+@theme inline {
+  --color-cream: var(--tk-color-cream);
+  --color-paper: var(--tk-color-paper);
+  --color-parchment: var(--tk-color-parchment);
+  --color-rule: var(--tk-color-rule);
+  --color-ink: var(--tk-color-ink);
+  --color-ink-soft: var(--tk-color-inkSoft);
+  --color-oxblood: var(--tk-color-oxblood);
+  --color-oxblood-deep: var(--tk-color-oxbloodDeep);
+  --color-navy: var(--tk-color-navy);
+  --color-navy-deep: var(--tk-color-navyDeep);
+  --color-gold: var(--tk-color-gold);
+  --color-gold-foil: var(--tk-color-goldFoil);
+  --color-gold-soft: var(--tk-color-goldSoft);
+  --color-forest: var(--tk-color-forest);
+  --color-plum: var(--tk-color-plum);
+  --color-success: var(--tk-color-success);
+
+  --font-sans: var(--tk-font-ui);
+  --font-serif: var(--tk-font-body);
+  --font-heading: var(--tk-font-heading);
+  --font-display: var(--display-font, var(--tk-font-display-default));
+  --font-slavonic: var(--tk-font-display-slavonic);
+  --font-greek: var(--tk-font-display-greek);
+
+  --shadow-book: var(--tk-shadow-book);
+  --shadow-card: var(--tk-shadow-card);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+}
+
+:root {
+  --background: var(--tk-color-cream);
+  --foreground: var(--tk-color-ink);
+  --card: var(--tk-color-paper);
+  --card-foreground: var(--tk-color-ink);
+  --popover: var(--tk-color-paper);
+  --popover-foreground: var(--tk-color-ink);
+  --primary: var(--tk-color-oxblood);
+  --primary-foreground: var(--tk-color-paper);
+  --secondary: var(--tk-color-navy);
+  --secondary-foreground: var(--tk-color-paper);
+  --muted: var(--tk-color-parchment);
+  --muted-foreground: var(--tk-color-inkSoft);
+  --accent: var(--tk-color-parchment);
+  --accent-foreground: var(--tk-color-ink);
+  --destructive: var(--tk-color-danger);
+  --border: var(--tk-color-rule);
+  --input: var(--tk-color-rule);
+  --ring: var(--tk-color-gold);
+  --radius: var(--tk-radius-base);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    @apply font-serif;
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    overflow-x: clip;
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--tk-font-heading);
+    font-weight: 500;
+    letter-spacing: -0.005em;
+    line-height: 1.15;
+    text-wrap: balance;
+    overflow-wrap: break-word;
+  }
+  p { text-wrap: pretty; }
+  button:not(:disabled), [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+  :focus-visible {
+    outline: 2px solid var(--tk-color-gold);
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  .container-page {
+    width: 100%;
+    max-width: var(--tk-layout-maxWidth);
+    margin-inline: auto;
+    padding-inline: 1.25rem;
+  }
+  @media (min-width: 768px) {
+    .container-page { padding-inline: 2rem; }
+  }
+  .eyebrow {
+    font-family: var(--tk-font-ui);
+    font-size: 0.78rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--tk-color-gold);
+    font-weight: 600;
+  }
+  :lang(el) .eyebrow { letter-spacing: 0.08em; }
+  .rule-ornament {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--tk-color-gold);
+  }
+  .rule-ornament::before,
+  .rule-ornament::after {
+    content: "";
+    height: 1px;
+    flex: 1;
+    background: linear-gradient(to var(--rule-dir, right), transparent, var(--tk-color-rule) 30%, var(--tk-color-rule) 70%, transparent);
+  }
+  .foil-text {
+    background: linear-gradient(180deg, #e9d39a 0%, var(--tk-color-goldFoil) 45%, #9c7630 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .cloth {
+    background-image:
+      repeating-linear-gradient(0deg, rgba(255,255,255,.035) 0 1px, transparent 1px 3px),
+      repeating-linear-gradient(90deg, rgba(0,0,0,.05) 0 1px, transparent 1px 3px),
+      linear-gradient(160deg, var(--cloth-a), var(--cloth-b));
+  }
+  .paper-grain {
+    background-image:
+      radial-gradient(rgba(120, 90, 40, .05) 1px, transparent 1px),
+      radial-gradient(rgba(120, 90, 40, .035) 1px, transparent 1px);
+    background-size: 22px 22px, 13px 13px;
+    background-position: 0 0, 7px 11px;
+  }
+  .prose-reading p + p { margin-top: 1em; }
+  .prose-reading h2 { font-size: 1.5rem; margin: 1.6em 0 0.5em; }
+  .prose-reading ul { list-style: disc; padding-inline-start: 1.25em; margin: 0.75em 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+}

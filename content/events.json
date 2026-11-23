@@ -1,0 +1,65 @@
+{
+  "$schema": "../schemas/events.schema.json",
+  "events": [
+    {
+      "id": "sample-signing",
+      "orthodoxConnectId": "TODO-event-1",
+      "kind": "signing",
+      "start": "2026-12-05T14:00",
+      "end": "2026-12-05T16:00",
+      "title": { "en": "Book signing: Sample New Release", "ru": "Автограф-сессия: условная новинка", "el": "Υπογραφή βιβλίου: ενδεικτική νέα έκδοση" },
+      "speaker": { "en": "A. Sample Author", "ru": "А. Образцов", "el": "Α. Δειγματόπουλος" },
+      "place": { "en": "In the bookstore", "ru": "В лавке", "el": "Στο βιβλιοπωλείο" },
+      "summary": { "en": "Placeholder for a one-line description of the event.", "ru": "Место для краткого описания встречи в одну строку.", "el": "Θέση για μια σύντομη περιγραφή της εκδήλωσης." },
+      "product": "sample-new-release"
+    },
+    {
+      "id": "sample-story-hour",
+      "orthodoxConnectId": "TODO-event-2",
+      "kind": "children",
+      "start": "2026-12-12T10:30",
+      "end": "2026-12-12T11:30",
+      "title": { "en": "Children's story hour: St. Nicholas", "ru": "Детский час: святитель Николай", "el": "Ώρα παραμυθιού: ο Άγιος Νικόλαος" },
+      "speaker": { "en": "Sample Sunday school teacher", "ru": "Условный учитель воскресной школы", "el": "Ενδεικτικός κατηχητής" },
+      "place": { "en": "Reading corner", "ru": "Уголок для чтения", "el": "Γωνιά ανάγνωσης" },
+      "summary": { "en": "Placeholder for a one-line description of the event.", "ru": "Место для краткого описания встречи в одну строку.", "el": "Θέση για μια σύντομη περιγραφή της εκδήλωσης." },
+      "product": "nicholas-story"
+    },
+    {
+      "id": "sample-talk",
+      "orthodoxConnectId": "TODO-event-3",
+      "kind": "talk",
+      "start": "2026-12-17T19:00",
+      "end": "2026-12-17T20:30",
+      "title": { "en": "Sample talk with a guest speaker", "ru": "Пример встречи с гостем", "el": "Ενδεικτική ομιλία με προσκεκλημένο" },
+      "speaker": { "en": "Sample speaker, parish reader", "ru": "Условный докладчик, чтец прихода", "el": "Ενδεικτικός ομιλητής, αναγνώστης της ενορίας" },
+      "place": { "en": "Parish hall", "ru": "Приходской дом", "el": "Αίθουσα ενορίας" },
+      "summary": { "en": "Placeholder for a one-line description of the event.", "ru": "Место для краткого описания встречи в одну строку.", "el": "Θέση για μια σύντομη περιγραφή της εκδήλωσης." },
+      "product": "incarnation"
+    },
+    {
+      "id": "sample-reading-group",
+      "orthodoxConnectId": "TODO-event-4",
+      "kind": "reading-group",
+      "start": "2027-01-21T19:00",
+      "end": "2027-01-21T20:00",
+      "title": { "en": "Reading group: first meeting", "ru": "Кружок чтения: первая встреча", "el": "Ομάδα ανάγνωσης: πρώτη συνάντηση" },
+      "speaker": { "en": "Led by bookstore staff", "ru": "Ведут сотрудники лавки", "el": "Με το προσωπικό του βιβλιοπωλείου" },
+      "place": { "en": "In the bookstore", "ru": "В лавке", "el": "Στο βιβλιοπωλείο" },
+      "summary": { "en": "Placeholder for a one-line description of the event.", "ru": "Место для краткого описания встречи в одну строку.", "el": "Θέση για μια σύντομη περιγραφή της εκδήλωσης." },
+      "product": "ladder"
+    },
+    {
+      "id": "sample-past-event",
+      "orthodoxConnectId": "TODO-event-5",
+      "kind": "talk",
+      "start": "2026-11-08T15:00",
+      "end": "2026-11-08T16:00",
+      "title": { "en": "Sample past event", "ru": "Пример прошедшего события", "el": "Ενδεικτική παλαιότερη εκδήλωση" },
+      "speaker": { "en": "Sample speaker", "ru": "Условный докладчик", "el": "Ενδεικτικός ομιλητής" },
+      "place": { "en": "Parish hall", "ru": "Приходской дом", "el": "Αίθουσα ενορίας" },
+      "summary": { "en": "Placeholder for a one-line description of the event.", "ru": "Место для краткого описания встречи в одну строку.", "el": "Θέση για μια σύντομη περιγραφή της εκδήλωσης." },
+      "product": null
+    }
+  ]
+}

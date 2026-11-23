@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "posts.schema.json",
+  "title": "Journal posts and reviews",
+  "type": "object",
+  "required": ["posts"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "posts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["slug", "kind", "date", "author", "title", "excerpt", "body", "products"],
+        "properties": {
+          "slug": { "$ref": "common.schema.json#/definitions/id" },
+          "kind": { "enum": ["list", "review", "article"] },
+          "date": { "$ref": "common.schema.json#/definitions/date" },
+          "rating": { "type": "integer", "minimum": 1, "maximum": 5 },
+          "author": { "$ref": "common.schema.json#/definitions/localized" },
+          "title": { "$ref": "common.schema.json#/definitions/localized" },
+          "excerpt": { "$ref": "common.schema.json#/definitions/localized" },
+          "body": { "$ref": "common.schema.json#/definitions/localized", "description": "Separate paragraphs with a blank line." },
+          "products": { "type": "array", "items": { "type": "string" } }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

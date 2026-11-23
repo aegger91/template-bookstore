@@ -1,0 +1,10 @@
+import "@fontsource/eb-garamond/400.css";
+import "@fontsource/eb-garamond/400-italic.css";
+import "@fontsource/eb-garamond/500.css";
+import "@fontsource/eb-garamond/600.css";
+import "@fontsource/noto-serif-display/400.css";
+import "@fontsource/noto-serif-display/400-italic.css";
+import "@fontsource/noto-serif-display/500.css";
+import "@fontsource/noto-serif-display/600.css";
+import "@fontsource/ponomar/400.css";
+import "@fontsource/gfs-didot/400.css";
